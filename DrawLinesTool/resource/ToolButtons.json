@@ -1,0 +1,9 @@
+﻿{
+    "LineTools":[{"id":1,"text":"直线","icon":"line.bmp"},{"id":2,"text":"射线","icon":"line.bmp"},{"id":3,"text":"线段","icon":"line.bmp"},{"id":4,"text":"水平线","icon":"line.bmp"},
+        {"id":5,"text":"垂直线","icon":"line.bmp"},{"id":6,"text":"矩形","icon":"line.bmp"},{"id":7,"text":"平行线段","icon":"line.bmp"},{"id":8,"text":"平行趋势线","icon":"line.bmp"},
+        {"id":9,"text":"等周期线","icon":"line.bmp"},{"id":10,"text":"斐波那契周期线","icon":"line.bmp"},{"id":11,"text":"黄金分割线","icon":"line.bmp"},{"id":12,"text":"幅度尺","icon":"line.bmp"}],
+
+    "AssisTools":[{"id":13,"text":"选择","icon":"line.bmp"},{"id":14,"text":"上箭头","icon":"line.bmp"},{"id":15,"text":"下箭头","icon":"line.bmp"},{"id":16,"text":"文字注释","icon":"line.bmp"},
+        {"id":17,"text":"标价线","icon":"line.bmp"},{"id":18,"text":"删除单根画线","icon":"line.bmp"},{"id":19,"text":"删除全部画线","icon":"line.bmp"},{"id":20,"text":"截屏","icon":"line.bmp"}
+    ]
+}

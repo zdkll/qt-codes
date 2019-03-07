@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/ToolButtons.json</file>
+        <file>resource/icons/line.bmp</file>
+    </qresource>
+</RCC>
