@@ -1,0 +1,94 @@
+﻿#HZInfomationDlg
+{
+    background:#ffffff;
+}
+
+#HZInfomationDlg #InfomationTitle
+{
+    font:normal 14px "微软雅黑";
+    color:#ffffff;
+    background:transparent;
+}
+
+#HZInfomationDlg #InfomationClose
+{
+    image:url(:/skin/default/img/keyboard/close.png);
+    background:transparent;
+}
+
+#HZInfomationDlg #InfomationClose:hover
+{
+    image:url(:/skin/default/img/keyboard/close_hover.png);
+    background:transparent;
+}
+
+#TitleFrame
+{
+    color:#ebebeb;
+    background:#2f2f2f;
+}
+
+#hzvlistview
+{
+    border: 1px solid transparent;
+}
+
+#hzvlistview::item:selected {
+  background:#e9ecf5;
+}
+
+#hzvlistview::item:hover {
+  background:#e9ecf5;
+}
+ 
+#hzvlistview QScrollBar:vertical
+{
+    width:15px;
+    background:#ebebeb;
+    margin:0px,3px,0px,3px;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+
+/*, #hzvlistview QScrollBar::handle:vertical:hover*/
+#hzvlistview QScrollBar::handle:vertical
+{
+    width:8px;
+    background:#c6c6c6;
+    border-radius:6px;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    min-height:20px;
+}
+
+/*, #hzvlistview QScrollBar::add-line:vertical:hover*/
+#hzvlistview QScrollBar::add-line:vertical
+{
+    height:9px;width:8px;
+    margin-left:1px;
+    border-image:url(:/skin/default/img/keyboard/sdBotton3.png);
+    subcontrol-position:bottom;
+}
+
+/*, #hzvlistview QScrollBar::sub-line:vertical:hover*/
+#hzvlistview QScrollBar::sub-line:vertical
+{
+    height:9px;width:8px;
+    margin-left:1px;
+    border-image:url(:/skin/default/img/keyboard/sdTop1.png);
+    subcontrol-position:top;
+}
+
+#hzvlistview QScrollBar::add-page:vertical, #hzvlistview QScrollBar::sub-page:vertical
+{
+    border-radius:0px;
+    height:20px;
+    background:transparent;
+}
+
+#hzvlistview QScrollBar::add-page:vertical:hover,#hzvlistview QScrollBar::sub-page:vertical:hover
+{
+    border-radius:0px;
+    height:20px;
+    background:transparent;
+}

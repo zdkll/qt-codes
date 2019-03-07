@@ -1,0 +1,391 @@
+﻿/********************************************************************
+created: 2018/04/17
+author: min.cheng
+purpose: 个股详情相关的配置
+*********************************************************************/
+StockDetailPage
+{
+    background-color:#010101;
+}
+
+/***************************左侧区域 自选 资金异动，最近浏览*******/
+StockDetailListWnd QWidget#titleWnd
+{
+background-color:#191919;
+}
+
+/*选择控件*/
+StockDetailListWnd CSubTab#sletTab QPushButton
+{
+background-color:transparent;
+font-size:12px;
+font-family:"SumSun";
+color:#797979;
+
+padding-top:4px;
+padding-bottom:4px;
+padding-left:10px;
+padding-right:10px;
+}
+
+StockDetailListWnd CSubTab#sletTab QPushButton:checked
+{
+color:#ffffff;
+}
+
+/*板块详情左侧窗口标题样式*/
+BlockDetaillistWnd  QLabel#optionLabel
+{
+    background-color:#222222;
+    font-size:12px;
+    font-family:"SimSun";
+    color:#ffffff;
+    padding:0px;
+}
+
+/***************************左侧区域***************************/
+
+/***************************中间区域  K线分时样式***************************/
+StockDetailKlineMinWnd QWidget#titleWnd
+{
+background-color:#191919;
+}
+
+StockDetailKlineMinWnd HZLine
+{
+   color:#010101;
+}
+
+/*股票名称*/
+StockDetailKlineMinWnd QLabel#objName
+{
+font:bold 13px "Arial";
+color:#ffffff;
+padding-left:10;
+}
+
+/*周期选择控件*/
+StockDetailKlineMinWnd CSubTab#periodTab QPushButton{
+background-color:transparent;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+border-radius: 2px;
+width:60px;
+padding-top:4px;
+padding-bottom:4px;
+}
+
+StockDetailKlineMinWnd CSubTab#periodTab QPushButton:checked
+{
+background-color:#414141;
+color:#ffffff;
+}
+
+/*指标选择控件*/
+StockDetailKlineMinWnd QWidget#midIndiPanel
+{
+    background-color:#0f1317;
+    border-top:1px solid #2f2f2f;
+    border-bottom:1px solid #2f2f2f;
+}
+
+StockDetailKlineMinWnd CSubTab >HZLine
+{
+    color:#2f2f2f;
+}
+
+StockDetailKlineMinWnd CSubTab#indiTab
+{
+background-color:#0f1317;
+border-top:1px solid #2f2f2f;
+border-bottom:1px solid #2f2f2f;
+}
+
+
+StockDetailKlineMinWnd CSubTab#indiTab QPushButton
+{
+background-color:transparent;
+font-size:12px;
+font-family:"Arial";
+color:#adadad;
+
+padding-top:4px;
+padding-bottom:4px;
+padding-left:10px;
+padding-right:10px;
+}
+
+StockDetailKlineMinWnd CSubTab#indiTab QPushButton:checked
+{
+color:#4f9bff;
+}
+
+
+/*左侧隐藏显示按钮*/
+StockDetailKlineMinWnd QToolButton#leftExpandButton
+{
+image:url(:/skin/default/img/expansion/expansion-hover01.png);
+image-position:center;
+border:none;
+}
+
+StockDetailKlineMinWnd QToolButton#leftExpandButton:checked
+{
+image:url(:/skin/default/img/expansion/expansion01.png);
+}
+
+/*右侧隐藏显示按钮*/
+StockDetailKlineMinWnd QToolButton#rightExpandButton
+{
+image:url(:/skin/default/img/expansion/expansion-hover02.png);
+image-position:center;
+border:none;
+}
+
+StockDetailKlineMinWnd QToolButton#rightExpandButton:checked
+{
+image:url(:/skin/default/img/expansion/expansion02.png);
+}
+
+
+/***************************中间区域 样式 end***************************/
+
+/**************************页面导航 样式***************************/
+StockBaseDetailPage QWidget#titleWnd
+{
+    background-color:#222222;
+}
+
+StockBaseDetailPage HZLine
+{
+   color:#010101;
+}
+
+/*底部隐藏显示按钮*/
+StockBaseDetailPage QToolButton#bottomExpandButton
+{
+image:url(:/skin/default/img/expansion/expansion-hover03.png);
+image-position:center;
+border:none;
+}
+
+StockBaseDetailPage QToolButton#bottomExpandButton:checked
+{
+image:url(:/skin/default/img/expansion/expansion03.png);
+}
+
+/*标题选择*/
+StockBaseDetailPage CSubTab#seltTab QPushButton
+{
+background-color:transparent;
+font-size:12px;
+font-family:"SimSun";
+color:#797979;
+
+width:80px;
+padding-top:4px;
+padding-bottom:4px;
+}
+
+StockBaseDetailPage CSubTab#seltTab QPushButton:checked
+{
+color:#ffffff;
+}
+
+
+/*F10*/
+StockBaseDetailPage QPushButton#bottomF10
+{
+    background-color:#222222;
+    font-size:12px;
+    font-family:"SimSun";
+    color:#adadad;
+    border-radius: 2px;
+    width:70px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+StockBaseDetailPage QPushButton#bottomF10::hover
+{
+    background-color:#414141;
+    color:#ffffff;
+}
+
+
+
+/**************************页面导航 样式END***************************/
+
+/**************************右侧盘口   样式***************************/
+/*盘口五档买卖标题*/
+QuotePanel QWidget#title
+{
+    background-color:#2f2f2f;
+}
+
+QuotePanel QWidget#mainwidget
+{
+    background-color:transparent;
+}
+
+QuotePanel QLabel
+{
+    font: 12px "SimSun";
+    color:#ffffff;
+    padding-left:15;
+}
+
+QuotePanel QLabel#tickPrice
+{
+    padding-left:7;
+}
+
+QuotePanel QPushButton#clickTick
+{
+width:18px;
+height:18px;
+border-image:url(:/skin/default/img/handicap/detailed.png);
+}
+
+QuotePanel QPushButton#clickTick:hover
+{
+border-image:url(:/skin/default/img/handicap/detailed_hover.png);
+}
+
+QuotePanel QPushButton#clickTick::pressed{
+border-image:url(:/skin/default/img/handicap/detailed_hover.png);
+}
+
+StockDetailQuotePanelWnd
+{
+    background-color:#000000;
+}
+
+StockDetailQuotePanelWnd QWidget#QuoteTile
+{
+    background-color:red;
+}
+
+StockDetailQuotePanelWnd QWidget#ExtraDataWnd
+{
+    background-color:blue;
+}
+
+
+StockDetailQuotePanelWnd QWidget#BaseDataWnd
+{
+    background-color:yellow;
+    border-top:1px solid #222222;
+    border-bottom:1px solid #222222;
+}
+
+/*选择控件*/
+StockDetailQuotePanelWnd  CSubTab#sletTab QPushButton{
+background-color:#222222;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+height:26px;
+border-radius: 1px;
+}
+
+StockDetailQuotePanelWnd  CSubTab#sletTab QPushButton:checked
+{
+background-color:#3c3c3c;
+color:#ffffff;
+}
+
+BlockDetaillistWnd QPushButton#upBt
+{
+    background-image:url(:/skin/default/img/stockdetail/up02.png);
+    background-repeat:none;
+    background-position: center;
+    border:none;
+}
+
+BlockDetaillistWnd QPushButton#upBt:hover
+{
+    background-image:url(:/skin/default/img/stockdetail/up02.png);
+}
+
+BlockDetaillistWnd QPushButton#upBt:checked
+{
+    background-image:url(:/skin/default/img/stockdetail/right03_hover.png);
+}
+
+BlockDetaillistWnd QPushButton#downBt
+{
+    background-image:url(:/skin/default/img/stockdetail/down02.png);
+    background-repeat:none;
+    background-position: center;
+    border:none;
+}
+
+BlockDetaillistWnd QPushButton#downBt:hover
+{
+    background-image:url(:/skin/default/img/stockdetail/down02.png);
+}
+
+BlockDetaillistWnd QPushButton#downBt:checked
+{
+    background-image:url(:/skin/default/img/stockdetail/down02_hover.png);
+}
+
+/**************************右侧盘口样式END***************************/
+
+/**************************相关板块begin***************************/
+
+/*涨跌平家数界面*/
+QLabel#RelationBlockWndLabel
+{
+background-color:#191919;
+font:normal 12px "SimSun";
+color:#adadad
+}
+RiseFallFlatRectChartWnd
+{
+background-color:#191919;
+qproperty-m_equalClr:#898989;
+qproperty-m_upClr:#cc2525;
+qproperty-m_downClr:#0aaa38;
+
+qproperty-m_equalClrText:#898989;
+qproperty-m_upClrText:#e62727;
+qproperty-m_downClrText:#0fc351;
+qproperty-m_clrText:#cad4dc;
+qproperty-m_clrLine:#2f2f2f;
+}
+
+/*左侧板块列表和成分股列表*/
+RelationBlockListView
+{
+background-color:#191919;
+}
+
+RelationBlockListView QHeaderView {
+    background-color:#191919;
+    border-bottom:1px solid #000000;
+    min-height:23px;
+}
+
+RelationBlockListView QHeaderView::section {
+    background-color:#191919;
+}
+
+BKStockDynaView#relationBkChildStockView
+{
+    background-color:#191919;
+}
+
+BKStockDynaView#relationBkChildStockView QHeaderView
+{
+background-color:#191919;
+border-bottom:1px solid #000000;
+min-height:22px;
+}
+
+BKStockDynaView#relationBkChildStockView QHeaderView::section {
+    background-color:#191919;
+}
+/**************************相关板块end***************************/

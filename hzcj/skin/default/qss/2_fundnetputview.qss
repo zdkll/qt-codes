@@ -1,0 +1,53 @@
+﻿SLFundNetputView
+{
+qproperty-riseColor:#e62727;
+qproperty-plainColor:#cad4dc;
+qproperty-fallColor:#0aaa38;
+
+qproperty-normalColor:#adadad;
+
+}
+
+/*******************资金净流入缩略图 **********************/
+SLFundNetputView
+{
+background-color:#191919;
+selection-background-color:#2e2e2e;
+border:none;
+}
+
+SLFundNetputView QHeaderView
+{
+background-color:#0e0e0e;
+border:none;
+border-bottom:1px solid #3e3e3e;
+font:normal 12px "SimSun";
+color: #adadad;
+}
+
+SLFundNetputView QHeaderView::section
+{
+background-color:#222222;
+border:none;
+margin-right:1px;
+height:22px;
+}
+
+
+SLFundNetputView QHeaderView::up-arrow,QHeaderView::down-arrow
+{
+subcontrol-position:center right;
+margin-right:1px;
+width:6px;
+height:6px;
+}
+
+SLFundNetputView QHeaderView::up-arrow
+{
+image:url(:/skin/default/img/tableview/up.png);
+}
+
+SLFundNetputView QHeaderView::down-arrow
+{
+image:url(:/skin/default/img/tableview/down.png);
+}

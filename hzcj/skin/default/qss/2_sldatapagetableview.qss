@@ -1,0 +1,74 @@
+﻿SLDataPageTableView
+{
+qproperty-riseColor:#e62727;
+qproperty-plainColor:#cad4dc;
+qproperty-fallColor:#0aaa38;
+
+qproperty-normalColor:#adadad;
+}
+
+/*******************个股和板块缩略图 **********************/
+SLDataPageTableView
+{
+background-color:#191919;
+selection-background-color:#2e2e2e;
+border:none;
+}
+
+SLDataPageTableView
+{
+background-color:#0e0e0e;
+selection-background-color:#2e2e2e;
+border:none;
+}
+
+SLDataPageTableView::section
+{
+height:22px;
+}
+
+SLDataPageTableView QHeaderView
+{
+background-color:#191919;
+border:none;
+height:22px;
+border-bottom:1px solid #3e3e3e;
+font:normal 12px "SimSun" ;
+}
+
+SLDataPageTableView QHeaderView::section
+{
+background-color:#222222;
+border:none;
+margin-right:1px;
+
+padding-top:3px;
+padding-bottom:2px;
+
+/*padding-right:10px;*/
+margin-bottom:1px;
+
+font:normal 12px "SimSun" ;
+color: #adadad;
+}
+
+
+SLDataPageTableView QHeaderView::up-arrow,QHeaderView::down-arrow
+{
+subcontrol-position:center right;
+margin-right:1px;
+width:6px;
+height:6px;
+}
+
+SLDataPageTableView QHeaderView::up-arrow
+{
+image:url(:/skin/default/img/tableview/up.png);
+}
+
+SLDataPageTableView QHeaderView::down-arrow
+{
+image:url(:/skin/default/img/tableview/down.png);
+}
+
+

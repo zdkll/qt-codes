@@ -1,0 +1,12 @@
+#ifndef HZCONTROLS_GLOBAL_H
+#define HZCONTROLS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(HZCONTROLS_LIBRARY)
+#  define HZCONTROLSSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define HZCONTROLSSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // HZCONTROLS_GLOBAL_H

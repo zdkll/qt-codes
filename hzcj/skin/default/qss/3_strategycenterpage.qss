@@ -1,0 +1,482 @@
+﻿/********************************************************************
+created: 2019/01/16
+author: min.cheng
+purpose: 统一配置策略页面样式
+*********************************************************************/
+
+StrategyCenterPage
+{
+  background-color:#000000;
+}
+/*************************右侧上方标题样式***************/
+StrategyTitleWnd
+{
+     background-color:#191919;
+}
+
+StrategyTitleWnd QLabel
+{
+background:transparent;
+color:#cad4dc;
+font:14px "SimSun";
+padding:0;
+margin:0;
+border:0;
+}
+
+StrategyTitleWnd QLabel#title
+{
+font:bold 24px "MiscrosoftYaHei";
+}
+
+StrategyTitleWnd QLabel#content
+{
+color:#adadad;
+}
+
+
+
+StrategyTitleWnd QPushButton
+{
+qproperty-maximumSize:100px 28px;
+qproperty-minimumSize:100px 28px;
+border-radius:5px;
+color:#ffffff;
+font:12px "SimSun";
+background:#1c4676;
+}
+
+
+StrategyTitleWnd QLabel#zyx,
+StrategyTitleWnd QLabel#cxx
+{
+qproperty-maximumSize:102px 18px;
+qproperty-minimumSize:102px 18px;
+}
+/******重要性*******/
+StrategyTitleWnd QLabel#zyx[type='0']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star01.png);
+}
+
+StrategyTitleWnd QLabel#zyx[type='1']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star02.png);
+}
+
+
+StrategyTitleWnd QLabel#zyx[type='2']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star03.png);
+}
+
+
+StrategyTitleWnd QLabel#zyx[type='3']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star05.png);
+}
+
+
+StrategyTitleWnd QLabel#zyx[type='4']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star06.png);
+}
+
+StrategyTitleWnd QLabel#zyx[type='5']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star05.png);
+}
+
+/******持续性*******/
+StrategyTitleWnd QLabel#cxx[type='0']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star01.png);
+}
+
+StrategyTitleWnd QLabel#cxx[type='1']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star02.png);
+}
+
+
+StrategyTitleWnd QLabel#cxx[type='2']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star03.png);
+}
+
+
+StrategyTitleWnd QLabel#cxx[type='3']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star05.png);
+}
+
+
+StrategyTitleWnd QLabel#cxx[type='4']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star06.png);
+}
+
+StrategyTitleWnd QLabel#cxx[type='5']
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Star05.png);
+}
+
+/*************************右侧上方标题样式end***************/
+
+/*************************相关个股样式***************/
+StrategyRelatedStocksWidget
+{
+background:transparent;
+}
+
+StrategyRelatedStocksWidget QWidget#title
+{
+background:#2f2f2f;
+border-top:1px solid #000000;
+border-bottom:1px solid #000000;
+max-height:28px;
+min-height:28px;
+}
+
+StrategyRelatedStocksWidget QWidget#title QLabel
+{
+background:transparent;
+color:#ffffff;
+font:14px "SimSun";
+}
+
+StrategyRelatedStocksWidget QWidget#title QPushButton
+{
+background:transparent;
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+
+RelatedStockPanel
+{
+background:#191919;
+}
+
+RelatedStockPanel#first,RelatedStockPanel#second,
+RelatedStockPanel#forth,RelatedStockPanel#fifth
+{
+border-right:1px solid #2f2f2f;
+}
+
+RelatedStockPanel#first,RelatedStockPanel#second,RelatedStockPanel#third
+{
+border-bottom:1px solid #2f2f2f;
+}
+
+
+
+
+
+RelatedStockPanel QWidget#content
+{
+background:#222222;
+}
+
+RelatedStockPanel QLabel
+{
+color:#adadad;
+font: 14px "SimSun";
+}
+
+RelatedStockPanel QLabel#name
+{
+font: bold 16px "SimSun";
+color:#cad4dc;
+}
+
+RelatedStockPanel QLabel#code
+{
+font: bold 18px "Arial";
+color:#cad4dc;
+}
+
+RelatedStockPanel QLabel#rate
+{
+font:bold 18px "Arial";
+}
+
+RelatedStockPanel QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+RelatedStockPanel QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+RelatedStockPanel QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+RelatedStockPanel QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+
+/*************************相关个股样式end***************/
+
+/*************************相关资讯样式***************/
+StrategyRelatedInfowidget
+{
+background:transparent;
+}
+
+StrategyRelatedInfowidget QWidget#title
+{
+max-height:28px;
+min-height:28px;
+background:#2f2f2f;
+}
+
+StrategyRelatedInfowidget QWidget#title QLabel
+{
+color:#cad4dc;
+font:14px "SimSun";
+background:transparent;
+}
+
+StrategyRelatedInfoView
+{
+    border:none;
+    background:#191919;
+}
+
+StrategyRelatedInfoView::item:selected
+{
+    background:#222222;
+}
+/*************************相关资讯样式end***************/
+/*************************今日机会样式界面 以及listview样式配置***************/
+StrategyTodayChanceWnd
+{
+    background-color:#000000;
+    qproperty-m_codeNameFontFamily:'SimSun';
+    qproperty-m_codeNameFontSize:14;
+    qproperty-m_codeNameTextClr: #ffffff;
+
+    qproperty-m_descTextFontFamily:'SimSun';
+    qproperty-m_descTextFontSize:12;
+    qproperty-m_descTextTextClr: #adadad;
+
+    qproperty-m_descTextFontFamily:'Arial';
+    qproperty-m_descTextFontSize:13;
+
+    qproperty-m_equalClr:#b1bbc3;
+    qproperty-m_upClr:#e62727;
+    qproperty-m_downClr:#0aaa38;
+
+    qproperty-m_itemSelectedClr:#191919;
+    qproperty-m_itemHoverClr:#253a54;
+    qproperty-m_itemBorderClr:#2c2c2c;
+}
+
+StrategyTodayChanceWnd QLabel
+{
+    font: 12px "SimSun";
+    color:#cad4dc;
+    background:#1C1C1C;
+}
+
+
+StrategyTodayChanceWnd QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+ StrategyTodayChanceWnd QScrollBar::handle:vertical
+{
+    background-color:#2e2e2e;
+    border-radius:3px;
+    margin-left: 3px;
+    min-height: 20px;
+    margin-right:3px;
+}
+StrategyTodayChanceWnd QScrollBar::add-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: bottom;
+    subcontrol-origin:margin;
+}
+
+StrategyTodayChanceWnd QScrollBar::sub-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: top;
+    subcontrol-origin:margin;
+}
+
+StrategyTodayChanceWnd QScrollBar::up-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+StrategyTodayChanceWnd QScrollBar::down-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+StrategyTodayChanceWnd QScrollBar::add-page:vertical,#HZKBControl QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+StrategyTodayChanceWnd QListView {
+    background-color: #222222;
+    border: solid transparent;
+}
+
+/*************************今日机会样式listview样式配置 end***************/
+
+/*************************相关个股配置 begin***************/
+StrategyRelationStocksWnd
+{
+    background-color:#000000;
+}
+
+StrategyRelationStocksWnd QLabel
+{
+    font: 14px "SimSun";
+    color:#cad4dc;
+    background:#2f2f2f;
+    padding-left:22px;
+}
+
+StrategyRelationStocksInnerWnd
+{
+    background-color: transparent;
+    qproperty-m_bkClr: #191919;
+    qproperty-m_itemBkClr:#222222;
+    qproperty-m_upClr:#e62727;
+    qproperty-m_downClr:#0aaa38;
+    qproperty-m_equalClr:#b1bbc3;
+    qproperty-m_stockCodeAndNameClr:#cad4dc;
+    qproperty-m_stockFiledClr:#adadad;
+}
+/*************************相关个股配置 end***************/
+
+/*************************详情弹窗 begin***************/
+PlateInfoDlg
+{
+background:transparent;
+qproperty-maximumSize:1215px 710px;
+qproperty-minimumSize:1215px 710px;
+}
+
+PlateInfoDlg QWidget#title
+{
+background:#222222;
+max-height:30px;
+min-height:30px;
+}
+
+PlateInfoDlg QWidget#title QLabel
+{
+background:#222222;
+font:14px "MicroSoftYaHei";
+color:#ffffff;
+}
+
+PlateInfoDlg QWidget#body
+{
+background:#222222;
+}
+
+PlateInfoDlg QWidget#body QLabel
+{
+background:#222222;
+font:14px "SimSun";
+color:#cad4dc;
+}
+
+PlateInfoDlg QWidget#body QLabel#title
+{
+font:bold 24px "MicroSoftYaHei";
+}
+
+PlateInfoDlg QWidget#body QLabel#dot
+{
+color:#3182cf;
+}
+
+PlateInfoDlg QTextEdit
+{
+background:#222222;
+font:14px "SimSun";
+color:#cad4dc;
+border:none;
+}
+
+
+PlateInfoDlg QTextEdit QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+
+/*滚动条中滑块的样式*/
+PlateInfoDlg QTextEdit  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+
+PlateInfoDlg QTextEdit   QScrollBar::handle:vertical:hover {
+background: #505050;
+}
+
+PlateInfoDlg QTextEdit QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+PlateInfoDlg QTextEdit QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+PlateInfoDlg QTextEdit  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+PlateInfoDlg QTextEdit QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+
+PlateInfoDlg QTextEdit QScrollBar::add-page:vertical,PlateInfoDlg QTextEdit QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+/*************************详情弹窗 end***************/

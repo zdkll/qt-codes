@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../skin/update_exe/img/windowcontrolbox/icon_close.png</file>
+        <file>../skin/update_exe/img/windowcontrolbox/icon_expand.png</file>
+        <file>../skin/update_exe/img/windowcontrolbox/icon_mini.png</file>
+        <file>../skin/update_exe/img/windowcontrolbox/icon_narrow.png</file>
+        <file>../skin/update_exe/qss/update.qss</file>
+        <file>../skin/update_exe/img/titlebar/icon_logo.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,112 @@
+﻿SLBaseTableview
+{
+qproperty-riseColor:#e62727;
+qproperty-plainColor:#cad4dc;
+qproperty-fallColor:#0aaa38;
+
+qproperty-normalColor:#adadad;
+}
+
+/*******************个股和板块缩略图 **********************/
+SLBaseTableview
+{
+background-color:#191919;
+selection-background-color:#2e2e2e;
+border:none;
+}
+
+
+SLBaseTableview QHeaderView
+{
+background-color:#0e0e0e;
+border:none;
+border-bottom:1px solid #3e3e3e;
+font:normal 12px "SimSun" ;
+color: #adadad;
+}
+
+/**自选MIN盯盘**/
+SLOptionTableView
+{
+background-color:#0e0e0e;
+}
+SLOptionTableView  QHeaderView
+{
+border:none;
+}
+
+SLBaseTableview QHeaderView::section
+{
+background-color:#222222;
+height:22px;
+margin-right:1px;
+border:none;
+}
+
+SLOptionTableView  QHeaderView::section
+{
+background-color:#222222;
+}
+
+
+SLBaseTableview QHeaderView::up-arrow,QHeaderView::down-arrow
+{
+subcontrol-position:center right;
+margin-right:1px;
+width:6px;
+height:6px;
+}
+
+SLBaseTableview QHeaderView::up-arrow
+{
+image:url(:/skin/default/img/tableview/up.png);
+}
+
+SLBaseTableview QHeaderView::down-arrow
+{
+image:url(:/skin/default/img/tableview/down.png);
+}
+
+
+SLRiseFallWidget HZLine
+{
+color:#2f2f2f;
+}
+
+
+
+/*******************自选股缩略图 **********************/
+SLZXHistTableView
+{
+background-color:#252b2e;
+selection-background-color:#2b3236;/*#2b3236*/
+border:none;
+}
+SLZXHistTableView
+{
+border:none ;
+}
+
+SLZXHistTableView QHeaderView
+{
+background-color:#1b1f21;
+border:none;
+height:24px;
+}
+
+SLZXHistTableView QHeaderView::section
+{
+background-color:#333a40;
+border:none;
+margin-right:1px;
+
+padding-top:3px;
+padding-bottom:2px;
+
+padding-right:10px;
+
+margin-bottom:1px;
+
+font:normal 12px "SimSun" ;
+color: #cad4dc
+}

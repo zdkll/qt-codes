@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/btn_close.png</file>
+        <file>img/install-button01.png</file>
+        <file>img/install-button02.png</file>
+        <file>img/install-button02_hover.png</file>
+        <file>img/install-button03.png</file>
+        <file>img/install-button03_hover.png</file>
+        <file>img/install-button04.png</file>
+        <file>img/install-update-BG_03.png</file>
+        <file>img/Progress-bar.png</file>
+        <file>img/style.css</file>
+        <file>img/Update complete-BG.png</file>
+        <file>img/word2.png</file>
+        <file>img/install-button05.png</file>
+        <file>img/install-button05_hover.png</file>
+        <file>img/Update-BG.png</file>
+        <file>img/install-button04_hover.png</file>
+        <file>img/Checked.png</file>
+        <file>img/uncheck_hover.png</file>
+        <file>img/uncheck.png</file>
+    </qresource>
+</RCC>

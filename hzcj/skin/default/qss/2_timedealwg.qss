@@ -1,0 +1,167 @@
+﻿/*************************************
+*
+*分时成交窗口样式文件
+*/
+
+/************样式属性值***************/
+BaseTimeDealWidget
+{
+qproperty-colTimeColor:#cad4dc;
+qproperty-colPriceColor:#e62727;
+qproperty-colVolUpColor:#e62727;
+qproperty-colVolDownColor:#0aaa38;
+qproperty-gridLineColor:#2e2e2e;
+
+qproperty-fontFamily: "Arial";
+qproperty-fontPointSize: 13;
+
+qproperty-upArrowPix:url(:/skin/default/img/tableview/rise-small.png);
+qproperty-downArrowPix:url(:/skin/default/img/tableview/fall-small.png);
+}
+
+/****************逐笔全景列表***********************************/
+TimeDealTableView
+{
+border:none;
+background-color:#222222;
+gridline-color:#191919;
+}
+
+TimeDealTableView QHeaderView
+{
+background-color:#000000;
+margin-top:1px;
+border:none;
+}
+
+TimeDealTableView QHeaderView::section
+{
+background-color:#2e2e2e;
+padding-top:3px;
+padding-bottom:3px;
+
+margin-right:1px;
+
+font:normal 12px "SimSun" ;
+color: #adadad
+}
+
+/****************逐笔全景列表***********************************/
+
+/****************盘口缩略列表***********************************/
+SLTimeDealWidget TimeDealTableView
+{
+border:none;
+background-color:#222222;
+gridline-color:#2e2e2e;
+}
+
+SLTimeDealWidget TimeDealTableView::section
+{
+background-color:#222222;
+}
+/****************盘口缩略列表***********************************/
+
+
+
+AllTimeDealDialog
+{
+background:#222222;
+border:solid 2px #3e3e3e;
+color:#ffffff;
+}
+
+AllTimeDealDialog TitleBar QLabel
+{
+color:#ffffff;
+font:normal 14px "微软雅黑"
+}
+
+/*******************分时窗口滚动条*********************/
+BaseTimeDealWidget QScrollBar:vertical
+{
+width:16px;
+background-color:#0e0e0e;
+margin-top:14px;
+margin-bottom:14px;
+padding-left: 1px;
+padding-right: 1px;
+}
+
+BaseTimeDealWidget  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+
+BaseTimeDealWidget  QScrollBar::handle:vertical:hover
+{
+background: rgb(80, 80, 80);
+}
+
+BaseTimeDealWidget  QScrollBar::add-page:vertical
+{
+background-color:#0e0e0e;
+}
+
+BaseTimeDealWidget  QScrollBar::sub-page:vertical
+{
+background-color:#0e0e0e;
+}
+
+
+BaseTimeDealWidget QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+BaseTimeDealWidget QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+BaseTimeDealWidget  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+BaseTimeDealWidget QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+
+
+
+
+
+
+/****全图分时成交窗口, title********/
+AllTimeDealWidget TimeDealTitleWg#titleWg
+{
+background-color:#191919;
+}
+
+AllTimeDealWidget TimeDealTitleWg#titleWg QLabel#titleLabel
+{
+background-color:transparent;
+color:#4f9bff;
+font: 14px "SimSun";
+}
+
+AllTimeDealWidget TimeDealTitleWg#titleWg QLabel#legendLabel
+{
+background-color:transparent;
+color:#adadad;
+font:12px "Arial" ;
+}
+

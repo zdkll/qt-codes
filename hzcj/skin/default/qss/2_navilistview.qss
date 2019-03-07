@@ -1,0 +1,34 @@
+﻿NaviListView
+{
+qproperty-riseColor:#e62727;
+qproperty-fallColor:#0fc351;
+qproperty-plainColor:#cad4dc;
+
+qproperty-numberColor:#adadad; /*cad4dc*/
+qproperty-textColor:#ffffff;
+}
+
+NaviListView
+{
+background-color:#222222;
+selection-background-color:#1c4676;
+border:none;
+gridline-color:#2c2c2c;
+}
+
+NaviListView::item
+{
+height:42px;
+background-color:#222222;
+border-bottom:1px solid #2c2c2c;
+}
+
+NaviListView::item:selected
+{
+ background-color:#1c4676;
+}
+
+NaviListView::item:hover
+{
+ background-color:#253a54;
+}

@@ -1,0 +1,708 @@
+﻿/********************************************************************
+created: 2018/09/26
+author: juntang.xie
+purpose: 个股详情相关的配置
+*********************************************************************/
+
+OptionStockPage
+{
+    background-color:#000000;
+}
+
+OptionStockPage HZLine
+{
+   color:#000000;
+}
+
+/*盘口、资金、财务*/
+QuoteTabWidget  CSubTab#sletTab QPushButton{
+background-color:#222222;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+height:26px;
+border-radius: 1px;
+}
+
+QuoteTabWidget  CSubTab#sletTab QPushButton:checked
+{
+background-color:#3c3c3c;
+color:#ffffff;
+}
+
+/***************************左侧主要窗口区域  样式***************************/
+OptionMainWnd HZLine
+{
+   color:#000000;
+}
+
+/*标题窗口*/
+OptionMainWnd QWidget#topTitle
+{
+    background-color:#191919;
+}
+
+/*导航TAB*/
+OptionMainWnd CSubTab#topTab QPushButton{
+background-color:transparent;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+border-radius: 2px;
+width:70px;
+padding-top:4px;
+padding-bottom:4px;
+}
+
+OptionMainWnd CSubTab#topTab QPushButton:checked
+{
+background-color:#414141;
+color:#ffffff;
+}
+
+OptionMainWnd QPushButton#setting
+{
+qproperty-maximumSize:12px 12px;
+qproperty-minimumSize:12px 12px;
+border-image:url(:/skin/default/img/basecanvas/tubiao_13_01.png);
+}
+
+OptionMainWnd QPushButton#setting:hover
+{
+border-image:url(:/skin/default/img/basecanvas/tubiao_13_02.png);
+}
+
+/*底部导航*/
+OptionMainWnd  CSubTab#sletTab QPushButton{
+background-color:#222222;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+}
+
+OptionMainWnd  CSubTab#sletTab QPushButton:checked
+{
+background-color:#414141;
+color:#ffffff;
+}
+
+/*智能盯盘begin*/
+OptionSmartMonitorWnd  QLabel#optionLabel
+{
+    background-color:#222222;
+    font-size:12px;
+    font-family:"SimSun";
+    color:#ffffff;
+    padding:0px;
+}
+
+/*公司大事，盘中异动 tab样式*/
+/*标题选择*/
+OptionSmartMonitorWnd CSubTab#rightSletTab
+{
+    background-color:#222222;
+}
+
+OptionSmartMonitorWnd CSubTab#rightSletTab QPushButton
+{
+    background-color:transparent;
+    font-size:12px;
+    font-family:"SimSun";
+    color:#797979;
+    padding-top:0px;
+    padding-bottom:0px;
+    width:90px;
+    height:26px;
+}
+
+OptionSmartMonitorWnd CSubTab#rightSletTab QPushButton:checked
+{
+color:#ffffff;
+border-bottom:2px solid #4f9bff;
+}
+
+
+/*智能盯盘end*/
+
+/*测试相关*/
+
+/*自选股*/
+OptionListWnd BaseWidget#baseList
+{
+    background-color:red;
+}
+OptionListWnd BaseWidget#fundflow
+{
+    background-color:yellow;
+}
+OptionListWnd BaseWidget#ddelist
+{
+    background-color:blue;
+}
+
+/*最近浏览*/
+OptionRecentBrowseWnd BaseWidget#baseList
+{
+    background-color:purple;
+}
+
+/*自选股资讯*/
+OptionInfoWnd, OptionInfoWnd #InfoMaster
+{
+    background:#222222;
+}
+
+OptionInfoWnd #InfoWnd
+{
+    background:#222222;
+    border-left:1px solid black;
+}
+
+OptionInfoWnd BaseWidget #TitleTextLabel
+{
+    font-family:"SimSun";
+    font-size:12px;
+    color:#cad4dc;
+    background:transparent;
+}
+
+OptionInfoWnd NaviZXListView
+{
+    background:#222222;
+}
+
+OptionInfoWnd #CustomTitle {
+    font-family:"SimSun";
+    font-size:12px;
+    color:white;
+    background: #222222;
+    border-bottom:1px solid black;
+}
+
+/* scroll style */
+OptionInfoWnd BaseWidget QListView
+{
+    border:1px solid transparent;
+    background:transparent;
+}
+
+/* scroll style */
+OptionInfoWnd BasePage QListView
+{
+    border:1px solid transparent;
+    border-right:1px solid black;
+    background:transparent;
+}
+
+OptionInfoWnd NewsMarster#InfoWnd IndexReqButton
+{
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+}
+
+
+
+
+OptionInfoWnd BaseWidget QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+OptionInfoWnd BaseWidget QScrollBar::handle:vertical
+{
+    background-color:#2e2e2e;
+    border-radius:3px;
+    margin-left: 3px;
+    min-height: 20px;
+    margin-right:3px;
+}
+
+OptionInfoWnd BaseWidget QScrollBar::add-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: bottom;
+    subcontrol-origin:margin;
+}
+
+OptionInfoWnd BaseWidget QScrollBar::sub-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: top;
+    subcontrol-origin:margin;
+}
+
+OptionInfoWnd BaseWidget QScrollBar::up-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+OptionInfoWnd BaseWidget QScrollBar::down-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+OptionInfoWnd BaseWidget QScrollBar::add-page:vertical,
+OptionInfoWnd BaseWidget QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+/*
+OptionInfoWnd BaseWidget QListView
+{
+    background:transparent;
+}
+*/
+
+
+
+
+
+/*智能盯盘*/
+OptionSmartMonitorWnd BaseWidget#LeftOptionListWnd
+{
+    background-color:brown;
+}
+
+OptionSmartMonitorWnd BaseWidget#AbnormalChangesWnd
+{
+    background-color:red;
+}
+
+OptionSmartMonitorWnd BaseWidget#CompanyEventWnd
+{
+    background-color:blue;
+}
+
+/*自选股周报*/
+OptionWeeklyNewspaperWnd BaseWidget#weeklyNewspaperWnd
+{
+    background-color:green;
+}
+
+/*测试相关 end*/
+
+
+/***************************左侧主要窗口区域  样式End***************************/
+
+MinChartWidget
+{
+background-color:transparent;
+}
+
+MinChartWidget QWidget#tab, CSubTab#subtab
+{
+background-color:#2f2f2f;
+}
+MinChartWidget  CSubTab#subtab QPushButton{
+background-color:transparent;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+padding-left:11px;
+padding-right:11px;
+padding-top:5px;
+padding-bottom:5px;
+border-radius: 2px;
+}
+
+MinChartWidget  CSubTab#subtab QPushButton:checked
+{
+background-color:#4e4e4e;
+color:#ffffff;
+}
+
+MinChartWidget QWidget#head
+{
+background-color:#222222;
+}
+
+/***************************添加股票对话框  样式***************************/
+
+StockAddDialog{
+qproperty-maximumsize:400px 360px;
+qproperty-minimumsize:400px 360px;
+background:transparent;
+}
+
+
+StockAddDialog QWidget#title
+{
+max-width:400px;
+min-width:400px;
+max-height:30px;
+min-height:30px;
+border:1px solid #3e3e3e;
+border-bottom:none;
+background:#222222;
+}
+
+StockAddDialog QWidget#title QLabel
+{
+color:#ffffff;
+font:14px "MicrosoftYahei";
+}
+
+StockAddDialog QWidget#body
+{
+max-width:400px;
+min-width:400px;
+max-height:330px;
+min-height:330px;
+border:1px solid #3e3e3e;
+border-top:none;
+background:#131313;
+}
+
+StockAddDialog QWidget#body QLineEdit
+{
+border:1px solid #3e3e3e;
+background:transparent;
+font: 14px "SimSun";
+color:#adadad;
+}
+
+StockAddDialog QWidget#body QWidget#view
+{
+background:#191919;
+}
+
+StockAddDialog QWidget#body QPushButton
+{
+border-radius:2px;
+color:#ffffff;
+font:14px "MicrosoftYahei";
+background:#3182cf;
+}
+
+StockAddDialog QWidget#body QPushButton:hover
+{
+background: #1c4675;
+}
+
+/***************************添加股票对话框  样式End***************************/
+
+/***************************历史框视图  样式***************************/
+HistoryBoxView {
+        border: none;
+        background: transparent;
+}
+
+HistoryBoxView::item {
+        border: none;
+        border-bottom: 1px solid rgb(19, 19, 19);
+}
+
+HistoryBoxView::indicator {
+        width: 20px;
+        height: 30px;
+}
+
+
+
+
+HistoryBoxView::indicator:enabled:unchecked {
+        image: url(:/skin/default/img/1mainwindow/smallparts/add.png);
+}
+HistoryBoxView::indicator:enabled:unchecked:hover {
+        image: url(:/skin/default/img/1mainwindow/smallparts/add_hover.png);
+}
+
+HistoryBoxView::indicator:enabled:checked {
+        image: url(:/skin/default/img/1mainwindow/smallparts/delete.png);
+}
+HistoryBoxView::indicator:enabled:checked:hover {
+        image: url(:/skin/default/img/1mainwindow/smallparts/delete_hover.png);
+}
+
+
+/*垂直滚动条整体*/
+HistoryBoxView QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+HistoryBoxView  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+HistoryBoxView QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+HistoryBoxView QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+HistoryBoxView  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+HistoryBoxView QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+HistoryBoxView QScrollBar::add-page:vertical,HistoryBoxView QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+HistoryStyledWidget
+{
+qproperty-ColFirColor:"#ffffff";
+qproperty-ColThrColor:"#797979";
+}
+
+/***************************历史框视图  样式End***************************/
+
+
+/***************************自选股提醒对话框  样式***************************/
+StockWarnDialog{
+qproperty-maximumsize:400px 360px;
+qproperty-minimumsize:400px 360px;
+background:transparent;
+}
+
+StockWarnDialog QWidget#title
+{
+max-width:400px;
+min-width:400px;
+max-height:30px;
+min-height:30px;
+border:1px solid #3e3e3e;
+border-bottom:none;
+background:#222222;
+}
+
+StockWarnDialog QWidget#title QLabel
+{
+color:#ffffff;
+font: 12px "SimSun";
+}
+
+StockWarnDialog QWidget#body
+{
+max-width:400px;
+min-width:400px;
+max-height:330px;
+min-height:330px;
+border:1px solid #3e3e3e;
+border-top:none;
+background:#131313;
+}
+
+
+StockWarnDialog HZLine
+{
+min-width:358px;
+max-width:358px;
+color:#222222;
+}
+
+TopWidget
+{
+max-height: 68px;
+min-height: 68px;
+}
+
+TopWidget QLabel
+{
+    color:red;
+}
+
+TopWidget QLabel#name
+{
+font:14px "SimSun";
+color:#ffffff;
+}
+
+TopWidget QLabel#code
+{
+font:14px "Arial";
+color:#ffffff;
+}
+
+TopWidget QLabel#price
+{
+font:bold 24px "Arial";
+}
+
+
+TopWidget QLabel#rate
+{
+font:bold 13px "Arial";
+}
+
+TopWidget QLabel#arrow
+{
+max-width:11px;
+min-width:11px;
+max-height:15px;
+min-height:15px;
+}
+
+TopWidget QLabel#arrow[state="fall"]{
+border-image:url(:/skin/default/img/minimornitor/RIGHT-fall.png);
+}
+
+TopWidget QLabel#arrow[state="rise"]{
+border-image:url(:/skin/default/img/minimornitor/RIGHT-rise.png);
+}
+
+TopWidget QLabel#arrow[state="unknown"]{
+image:url("");
+}
+
+TopWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+TopWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+TopWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+TopWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+CenterWidget
+{
+max-height: 60px;
+min-height: 60px;
+}
+
+CenterWidget QLabel
+{
+color:#b7bfc7;
+font:14px "SimSun";
+}
+
+CenterWidget QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+CenterWidget QCheckBox::indicator:unchecked {
+     image: url(:/skin/default/img/1mainwindow/smallparts/uncheck.png);
+ }
+
+CenterWidget QCheckBox::indicator:unchecked:hover {
+     image: url(:/skin/default/img/1mainwindow/smallparts/uncheck_hover.png);
+ }
+
+
+CenterWidget QCheckBox::indicator:checked {
+     image: url(:/skin/default/img/1mainwindow/smallparts/checked.png);
+ }
+
+BottomWidget
+{
+max-height: 129px;
+min-height: 129px;
+border-bottom:1px solid #010101;
+border-left:1px solid #3e3e3e;
+border-right:1px solid #3e3e3e;
+}
+
+BottomWidget QLabel
+{
+color:#b7bfc7;
+font:14px "SimSun";
+}
+
+BottomWidget QLabel#textrate
+{
+color:#797979;
+}
+
+BottomWidget QLabel#up
+{
+color:#e62727;
+}
+
+BottomWidget QLabel#down
+{
+color:#0aaa38;
+}
+
+BottomWidget QLineEdit
+{
+max-width:60px;
+min-width:60px;
+max-height:22px;
+min-height:22px;
+background:#191919;
+border:1px solid #3e3e3e;
+color:#ffffff;
+}
+
+BottomWidget QLineEdit:hover
+{
+background:#191919;
+border:1px solid #519bff;
+color:#ffffff;
+}
+
+BottomWidget QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+BottomWidget QCheckBox::indicator:unchecked {
+     image: url(:/skin/default/img/1mainwindow/smallparts/uncheck.png);
+ }
+
+BottomWidget QCheckBox::indicator:unchecked:hover {
+     image: url(:/skin/default/img/1mainwindow/smallparts/uncheck_hover.png);
+ }
+
+
+BottomWidget QCheckBox::indicator:checked {
+     image: url(:/skin/default/img/1mainwindow/smallparts/checked.png);
+ }
+
+ButtonWidget QPushButton
+{
+width:100px;
+height:24px;
+border-radius:2px;
+color:#ffffff;
+font:14px "MicrosoftYahei";
+background:#3182cf;
+}
+
+ButtonWidget QPushButton:hover
+{
+background: #1c4675;
+}
+/***************************自选股提醒对话框  样式End***************************/

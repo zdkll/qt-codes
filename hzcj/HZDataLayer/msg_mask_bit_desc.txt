@@ -1,0 +1,140 @@
+一、StockMsg 个股，板块行情的全字段信息
+1、必吐字段：
+	stock_code stock_name is_block(未设置就表示个股)
+
+2、字段bit位置:
+	block_type 		bit_1 板块类型
+	stk_mmp  		bit_2 买卖五档
+	risest_stock 	bit_3 领涨股（板块才有，一般是请求板块排行)
+	stk_base(类型StockBase)
+	{
+                rate                        bit_4    
+                last_pice 		    bit_5
+                ratio			    bit_6
+                pbv			    bit_7
+                trading_day		    bit_8
+                pre_close_price		    bit_9
+                open_price		    bit_10	
+                highest_price		    bit_11
+                lowest_price		    bit_12
+                volume			    bit_13
+                cur_volume		    bit_14	
+                turnover_rate		    bit_15
+                pes			    bit_16
+                turnover		    bit_17		
+                avg_price		    bit_18		
+                update_time		    bit_19
+                committee                   bit_20
+                cir_stock		    bit_21    
+                tot_stock		    bit_22          
+                np_volume		    bit_23    
+                wp_volume		    bit_24    
+                trade_status		    bit_25
+                buy_sell_buy                bit_26
+                avg_stock		    bit_27 
+                rise		            bit_28     	
+                fall      		    bit_29
+                flat     	            bit_30
+                ro                          bit_31
+                roe                         bit_32
+                profit                      bit_33
+                upper_limit_rice            bit_34
+                down_limit_price            bit_35
+                clear_sig                   bit_36
+                ped                         bit_37
+                buy_sell		    bit_38
+                speed_rate                  bit_39
+                three_rate                  bit_40
+                three_tuv_rate              bit_41
+                five_tuv_rate               bit_42
+                detail_volume               bit_43
+                block_name                  bit_44
+                rise_day_num                bit_45
+                second_rate                 bit_46
+                five_rate                   bit_47
+                limit_up                    bit_48
+                cir_value                   bit_49
+                tot_value                   bit_50
+	}
+
+二、MoneyMsg 个股、板块主力资金
+ 1、必吐字段：
+	stock_code stock_name
+
+2、字段bit位置:
+	block_name 		bit_1
+	stock_type		bit_2
+	money_one_day(类型StockBase)
+	{
+                trading_day					bit_3
+                last_price					bit_4
+                pre_close_price				bit_5 
+                rate      					bit_6
+                auction_volume				bit_7
+                active_money				bit_8
+                leader_money				bit_9
+                maxord_money				bit_10
+                bigord_money                bit_11
+                midord_money                bit_12
+                minord_money                bit_13
+                avg_less_three              bit_14
+                avg_less_five               bit_15
+                leader_net_volume           bit_16
+	}	
+	
+	money_three_day(类型StockBase)
+	{
+                trading_day					bit_17
+                last_price					bit_18
+                pre_close_price				bit_19
+                rate      					bit_20
+                auction_volume				bit_21
+                active_money				bit_22
+                leader_money				bit_23
+                maxord_money				bit_24
+                bigord_money                bit_25
+                midord_money                bit_26
+                minord_money                bit_27
+                avg_less_three              bit_28
+                avg_less_five               bit_29
+                leader_net_volume           bit_30
+	}		
+		
+	money_five_day(类型StockBase)
+	{
+                trading_day					bit_31
+                last_price					bit_32
+                pre_close_price				bit_33
+                rate      					bit_34
+                auction_volume				bit_35
+                active_money				bit_36
+                leader_money				bit_37
+                maxord_money				bit_38
+                bigord_money                bit_39
+                midord_money                bit_40
+                minord_money                bit_41
+                avg_less_three              bit_42
+                avg_less_five               bit_43
+                leader_net_volume           bit_44
+	}
+
+	money_ten_day(类型StockBase)
+	{
+                trading_day					bit_45
+                last_price					bit_46
+                pre_close_price				bit_47 
+                rate      					bit_48
+                auction_volume				bit_49
+                active_money				bit_50
+                leader_money				bit_51
+                maxord_money				bit_52
+                bigord_money                bit_53
+                midord_money                bit_54
+                minord_money                bit_55
+                avg_less_three              bit_56
+                avg_less_five               bit_57
+                leader_net_volume           bit_58
+	}
+
+		
+		

@@ -1,0 +1,108 @@
+#HZPlateMoveMarster #HZPlateMove
+{
+    background:#0e0e0e;
+/*    color:#8d8d8d;*/
+}
+
+#scrollArea, #scrollAreaWidgetContents
+{
+    border:none;
+    background:transparent;
+}
+
+#HZPlateMove QLabel
+{
+    font-family:"SimSun";
+    color:#adadad;
+    border-radius:2px;
+    background:transparent;
+}
+
+#HZItemButton[isMarster=true] #LabTitle, #HZItemButton[isMarster=true]
+{
+    font-size:14px;
+    color:#adadad;
+    background:transparent;
+}
+
+#HZItemButton[isMarster=false] #LabTitle, #HZItemButton[isMarster=false]
+{
+    font-size:12px;
+    color:#adadad;
+    background:#191919;
+}
+
+#HZLabelDisplayItem[status=true]
+{
+    font-family:"ArialMT";
+    font-size:12px;
+    color:#e62727;
+}
+
+#HZLabelDisplayItem[status=false]
+{
+    font-family:"ArialMT";
+    font-size:12px;
+    color:green;
+}
+
+#HZPlateMoveMarster #Move_Title
+{
+    font-family:"SimSun";
+    font-size:12px;
+    color:#adadad;
+    background:#272727;
+}
+
+
+#scrollArea QScrollBar:vertical
+{
+    width:8px;
+    background:rgba(0,0,0,0%);
+    margin:0px,0px,0px,0px;
+    padding-top:9px;
+    padding-bottom:9px;
+}
+#scrollArea QScrollBar::handle:vertical
+{
+    width:8px;
+    background:rgba(0,0,0,25%);
+    border-radius:4px;
+    min-height:20;
+}
+#scrollArea QScrollBar::handle:vertical:hover
+{
+    width:8px;
+    background:rgba(0,0,0,50%);
+    border-radius:4px;
+    min-height:20;
+}
+#scrollArea QScrollBar::add-line:vertical
+{
+    height:9px;width:8px;
+    border-image:url(:/skin/default/img/keyboard/sdBotton3.png);
+    subcontrol-position:bottom;
+}
+#scrollArea QScrollBar::sub-line:vertical
+{
+    height:9px;width:8px;
+    border-image:url(:/skin/default/img/keyboard/sdTop1.png);
+    subcontrol-position:top;
+}
+#scrollArea QScrollBar::add-line:vertical:hover
+{
+    height:9px;width:8px;
+    border-image:url(:/skin/default/img/keyboard/sdBotton4.png);
+    subcontrol-position:bottom;
+}
+#scrollArea QScrollBar::sub-line:vertical:hover
+{
+    height:9px;width:8px;
+    border-image:url(:/skin/default/img/keyboard/sdTop2.png);
+    subcontrol-position:top;
+}
+#scrollArea QScrollBar::add-page:vertical,#scrollArea QScrollBar::sub-page:vertical
+{
+    background:rgba(0,0,0,10%);
+    border-radius:4px;
+}

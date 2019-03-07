@@ -1,0 +1,104 @@
+﻿
+/*start page*/
+#UpdateStartFrameMain
+{
+    border-image: url(:/skin/default/img/update/install-update-BG_03.png);
+}
+
+#frameUpdateTips
+{
+    border: 1px solid #86BBEC;
+    border-radius:6px;
+    background:#ffffff;
+}
+
+#lab_start_version
+{
+    font: 75 18px "微软雅黑";
+    color:#4890d4;
+}
+
+#lab_start_midline
+{
+    background:#86BBEC;
+}
+
+#tb_start_msg
+{
+    font: 14px "微软雅黑";
+    border: 2px solid transparent;
+    color:#898989;
+}
+
+#btn_start_left
+{
+    border-image:url(:/skin/default/img/update/install-button02.png);
+}
+
+#btn_start_left:hover
+{
+    border-image:url(:/skin/default/img/update/install-button02_hover.png);
+}
+
+#btn_start_right
+{
+    border-image:url(:/skin/default/img/update/install-button03.png);
+}
+
+#btn_start_right:hover
+{
+    border-image:url(:/skin/default/img/update/install-button03_hover.png);
+}
+
+#HZUpdateUiCtrlDlg QScrollBar:vertical
+{
+    width:8px;
+    background:rgba(0,0,0,0%);
+    margin:0px,0px,0px,0px;
+    padding-top:9px;
+    padding-bottom:9px;
+}
+#HZUpdateUiCtrlDlg QScrollBar::handle:vertical
+{
+    width:8px;
+    border:1px solid #86bbec;
+    background:rgba(255,255,255,25%);
+    border-radius:3px;
+    min-height:20;
+}
+#HZUpdateUiCtrlDlg QScrollBar::handle:vertical:hover
+{
+    width:8px;
+    background:rgba(0,0,0,50%);
+    border-radius:4px;
+    min-height:20;
+}
+#HZUpdateUiCtrlDlg QScrollBar::add-line:vertical
+{
+    height:9px;width:8px;
+    border-image:url(:/skin/default/img/keyboard/sdBotton3.png);
+    subcontrol-position:bottom;
+}
+#HZUpdateUiCtrlDlg QScrollBar::sub-line:vertical
+{
+    height:9px;width:8px;
+    border-image:url(:/skin/default/img/keyboard/sdTop1.png);
+    subcontrol-position:top;
+}
+#HZUpdateUiCtrlDlg QScrollBar::add-line:vertical:hover
+{
+    height:9px;width:8px;
+    border-image:url(:/skin/default/img/keyboard/sdBotton4.png);
+    subcontrol-position:bottom;
+}
+#HZUpdateUiCtrlDlg QScrollBar::sub-line:vertical:hover
+{
+    height:9px;width:8px;
+    border-image:url(:/skin/default/img/keyboard/sdTop2.png);
+    subcontrol-position:top;
+}
+#HZUpdateUiCtrlDlg QScrollBar::add-page:vertical,#HZUpdateUiCtrlDlg QScrollBar::sub-page:vertical
+{
+    background:rgba(0,0,0,10%);
+    border-radius:4px;
+}

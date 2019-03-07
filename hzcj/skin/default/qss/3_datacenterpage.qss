@@ -1,0 +1,576 @@
+﻿#CalendarBkClr
+{
+    background:#222222;
+}
+
+DataCenterPageMainWnd
+{
+    background-color:#000000;
+}
+/*标题窗口*/
+DataCenterPageMainWnd QWidget#topTitle
+{
+background-color:#191919;
+}
+
+DataCenterPageMainWnd CSubTab#topTab
+{
+    background-color:transparent;
+}
+/*导航TAB*/
+DataCenterPageMainWnd CSubTab#topTab QPushButton{
+background-color:transparent;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+border-radius: 2px;
+width:70px;
+padding-top:4px;
+padding-bottom:4px;
+}
+
+
+/*龙虎榜营业部详情*/
+WinnersListSalesOfficeChildWnd QLabel#labelTitle
+{
+background-color:#222222;
+font-size:14px;
+font-family:"SimSun";
+color:#adadad;
+padding-left:24px;
+}
+
+
+NormalChildWnd CSubTab#roottab QPushButton{
+background-color:#222222;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+height:24px;
+}
+
+NormalChildWnd  CSubTab#roottab QPushButton:checked
+{
+background-color:#3c3c3c;
+color:#ffffff;
+}
+
+NormalChildWnd HZLine
+{
+   color:#000000;
+}
+
+
+
+/***************************龙虎榜页面配置***********************/
+LhTopWidget
+{
+    qproperty-m_titleTextClr:#cad4dc;
+    qproperty-m_titleNumClr:#ffa200;
+}
+
+LhTopWidget QWidget#navigate
+{
+background:#222222;
+border-bottom:1px solid #191919;
+}
+/***************************龙虎榜页面配置***********************/
+
+/*集合竞价相关*/
+BiddingTitle#bidtitle
+{
+background-color:#222222;
+}
+LhTopWidget QWidget#title
+{
+background:#191919;
+border:1px solid #2F2F2F;
+border-left:0px;
+}
+
+LhTopWidget QWidget#center QLabel
+{
+font:13px "SimSun";
+color:#cad4dc;
+}
+
+LhTopWidget QWidget#center
+{
+background:#2F2F2F;
+}
+
+LhTopWidget QWidget#body
+{
+
+}
+
+NetBuyWidget
+{
+background:#191919;
+border-right:1px solid #2F2F2F;
+border-bottom:1px solid #2F2F2F;
+}
+
+NetBuyWidget QWidget#content
+{
+background:#222222;
+}
+
+NetBuyWidget QWidget#content QLabel#name
+{
+font:bold 16px "SimSun";
+color:#cad4dc;
+}
+
+NetBuyWidget QWidget#content QLabel#rate
+{
+font:bold 13px "Arial";
+/*color:#e62727;*/
+}
+
+NetBuyWidget QWidget#content QLabel#netbuy
+{
+font:bold 14px "SimSun";
+color:#e62727;
+}
+
+NetBuyWidget QWidget#content QLabel#amount
+{
+font:bold 13px "Arial";
+/*color:#e62727;*/
+}
+
+
+NetBuyWidget QWidget#content QLabel[QuoteDirc="0"]
+{
+color:#e62727;
+}
+
+NetBuyWidget QWidget#content QLabel[QuoteDirc="1"]
+{
+color:#0aaa38;
+}
+
+NetBuyWidget QWidget#content QLabel[QuoteDirc="2"]
+{
+color:#cad4dc;
+}
+
+NetBuyWidget QWidget#content QLabel[QuoteDirc="3"]
+{
+color:#cad4dc;
+}
+
+
+/*日历样式*/
+/* child title bar*/
+/*
+DataCenterPageMainWnd CustomCldBtn#customCldLhb
+{
+background-color:transparent;
+}
+*/
+
+LhTopWidget CustomCldBtn#CustomCldBtn
+{
+font: 12px Arial;
+color:#adadad;
+background-color:transparent;
+}
+
+/*
+LhTopWidget CustomCldBtn#CustomCldBtn:hover
+{
+font:12px Arial;
+color:#ffffff;
+border-radius:2px;
+border:2px solid transparent;
+background-color:#2f2f2f;
+}
+*/
+
+#CustomCldBtn
+{
+font: 12px Arial;
+color:#adadad;
+background-color:transparent;
+}
+
+#CustomCldBtn:hover
+{
+font:12px Arial;
+color:#ffffff;
+border-radius:2px;
+border:2px solid transparent;
+background-color:#2f2f2f;
+}
+
+
+/***************************龙虎榜页面配置end***********************/
+
+
+
+/***************************资金异动图像配置***********************/
+FundChangeChartWidget
+{
+background:#191919;
+}
+
+FundChangeChartWidget QLabel
+{
+font: 14px "Simsun";
+color:#cad4dc;
+}
+
+FundChartStyledWidget
+{
+qproperty-lineColor:#2f2f2f;
+qproperty-textColor:#cad4dc;
+qproperty-riseNumColor:#e62727;
+qproperty-fallNumColor:#0aaa38;
+qproperty-riseBorderColor:#9a1f1f;
+qproperty-fallBorderColor:#127f3a;
+qproperty-riseBrushColor:#350c0f;
+qproperty-fallBrushColor:#0b2e18;
+}
+
+/***************************资金异动图像配置end***********************/
+
+/***********************融资融券begin************************/
+DataCenterPageMainWnd QLabel#filedName{
+color:#cad4dc;
+font-size:12px;
+font-family: "SimSun";
+}
+
+DataCenterPageMainWnd QLabel#filedValue[QuoteDirc="quote_up"]{
+color:#e62727;
+font-size:11px;
+font-family: "Arial";
+}
+
+DataCenterPageMainWnd QLabel#filedValue[QuoteDirc="quote_down"]{
+color:#0aaa38;
+font-size:11px;
+font-family: "Arial";
+}
+
+DataCenterPageMainWnd QLabel#filedValue[QuoteDirc="quote_equal"]{
+color:#cad4dc;
+font-size:11px;
+font-family: "Arial";
+}
+
+
+BlockTradeChildWnd QLabel#textLabel
+{
+background-color:#222222;
+font-family: "SimSun";
+font-size: 12px;
+font-weight: 400;
+color: #FEFEFE;
+}
+
+BlockTradeBkAndStocksChildWnd QWidget#BottomWnd
+{
+background-color:#222222;
+}
+
+/*底部隐藏显示按钮*/
+BlockTradeBkAndStocksChildWnd QToolButton#bottomExpandButton
+{
+image:url(:/skin/default/img/expansion/expansion-hover03.png);
+image-position:center;
+border:none;
+}
+
+BlockTradeBkAndStocksChildWnd QToolButton#bottomExpandButton:checked
+{
+image:url(:/skin/default/img/expansion/expansion03.png);
+}
+
+BlockTradeBkAndStocksChildWnd QLabel#titleText
+{
+font:normal  normal  12px  "SimSun";
+color:#ffffff;
+padding-left:12px;
+}
+
+BlockTradeTopWnd
+{
+    background-color:#0c1215;
+}
+
+BlockTradeChildWnd SmtLsGraphTitle#marketRzrqTitle
+{
+    background-color:#0c1215;
+    border-bottom:2px solid #222222;
+    qproperty-m_equalClr:#b1bbc3;
+    qproperty-m_upClr:#e62727;
+    qproperty-m_downClr:#0aaa38;
+    qproperty-m_titleTextClr:#cad4dc;
+}
+
+BlockTradeChildWnd BaseWidget#marketRzrq
+{
+    background-color:#0c1215;
+}
+
+/*曲线样式*/
+SmtCurveGraphCanvas
+{
+    background-color:#0c1215;
+    qproperty-m_bkClr: #0c1215;
+    qproperty-m_minLineClr:#3682e6;
+    qproperty-m_gridClr: #12191d;
+    qproperty-m_equalClr:#b1bbc3;
+    qproperty-m_upClr:#e62727;
+    qproperty-m_downClr:#0aaa38;
+    qproperty-m_titleTextClr:#cad4dc;
+    qproperty-m_minAvgLineClr:#e68919;
+    qproperty-m_gradClr:#3682E6;
+    qproperty-m_crossLineTextClr:#b1bbc3;
+    qproperty-m_crossLineRcBkClr:#0c1215;
+    qproperty-m_crossLineClr:#414141;
+    qproperty-m_axisTextClr:#676767;
+}
+
+/***********************融资融券end************************/
+
+
+
+/***************************集合竞价绘图配置***********************/
+BlockTradeChildWnd QWidget#calanTitle
+{
+background-color:#222222;
+}
+
+SetBiddingWidget QWidget#mainwidget
+{
+background:#191919;
+}
+
+SetBiddingWidget SetBiddingStyledWidget
+{
+qproperty-lineColor:#2f2f2f;
+qproperty-textColor:#adadad;
+qproperty-riseNumColor:#e62727;
+qproperty-fallNumColor:#0aaa38;
+qproperty-riseBorderColor:#9a1f1f;
+qproperty-fallBorderColor:#127f3a;
+qproperty-riseBrushColor:#350c0f;
+qproperty-fallBrushColor:#0b2e18;
+}
+
+/***************************集合竞价绘图配置end***********************/
+
+/*大宗交易页面相关配置*/
+SecuritiesMarginTradingChildWnd QPushButton
+{
+background-color:transparent;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+border-radius: 2px;
+width:70px;
+padding-top:4px;
+padding-bottom:4px;
+}
+
+SecuritiesMarginTradingChildWnd QPushButton:checked
+{
+background-color:#414141;
+color:#ffffff;
+}
+
+
+/***************************新股日历 start***********************/
+XgrlJrsgWidget CSubTab QPushButton
+{
+background-color:transparent;
+
+font-size:14px;
+font-family:"SimSun";
+color:#cad4dc;
+}
+/***************************新股日历 end***********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************测试用***********************/
+DataCenterPageMainWnd CSubTab#topTab QPushButton:checked
+{
+background-color:#414141;
+color:#ffffff;
+}
+
+BaseWidget#stockrightPanel
+{
+background-color:blue;
+}
+/*
+DataCenterPageMainWnd BaseWidget#WinnersListWndrightPanel
+{
+background-color:green;
+}
+
+DataCenterPageMainWnd BaseWidget#CallAuctionWndrightPanel
+{
+background-color:yellow;
+}
+
+*/
+DataCenterPageMainWnd BaseWidget#CallAuctionWnd
+{
+background-color:#8B8B21;
+}
+
+DataCenterPageMainWnd BaseWidget#LimitUpMonitorWnd
+{
+background-color:#8B8B41;
+}
+
+DataCenterPageMainWnd BaseWidget#WinnersListWndWnd
+{
+background-color:#8B8B51;
+}
+
+DataCenterPageMainWnd BaseWidget#FundAbnormalWnd
+{
+background-color:#8B8B61;
+}
+
+DataCenterPageMainWnd BaseWidget#NewStockCalendarWnd
+{
+background-color:#8B8A61;
+}
+
+DataCenterPageMainWnd BaseWidget#BlockTradeWnd
+{
+background-color:#8B8C61;
+}
+
+
+DataCenterPageMainWnd BaseWidget#SecuritiesMarginTradingWnd
+{
+background-color:#8B8D61;
+}
+
+DataCenterPageMainWnd BaseWidget#WinnersListSalesOfficeDetailWnd
+{
+background-color:#9370DB;
+}
+
+DataCenterPageMainWnd BaseWidget#tab1
+{
+background-color:#2E8B57;
+}
+
+DataCenterPageMainWnd BaseWidget#tab2
+{
+background-color:#FFFAF0;
+}
+
+DataCenterPageMainWnd BaseWidget#tab3
+{
+background-color:#B0C4DE;
+}
+
+DataCenterPageMainWnd BaseWidget#tab4
+{
+background-color:#D3D3D3;
+}
+DataCenterPageMainWnd BaseWidget#tab5
+{
+background-color:#DCDCDC;
+}
+
+DataCenterPageMainWnd BaseWidget#tab6
+{
+background-color:#F5F5F5;
+}
+/*
+CallAuctionChildWnd BaseWidget#CallAuctionTopWnd
+{
+background-color:green;
+}*/
+
+LimitUpMonitorChildWnd BaseWidget#LimitUpMonitorTopWnd
+{
+background-color:red;
+}
+
+/*
+WinnersListChildWnd BaseWidget#WinnersListTopWnd
+{
+background-color:yellow;
+}
+*/
+
+FundAbnormalChildWnd BaseWidget#FundAbnormalTopWnd
+{
+background-color:#191919;
+}
+
+BlockTradeChildWnd BaseWidget#CalandarBarWnd
+{
+background-color:red;
+}
+
+BlockTradeChildWnd BaseWidget#RzrqHistoryChartWnd
+{
+background-color:yellow;
+}
+
+BlockTradeChildWnd BaseWidget#TheNetBuyingListWnd
+{
+background-color:green;
+}
+/***************************测试用***********************/
+
+/***************************相似K线***********************/
+
+SimilarKlineMainWnd
+{
+    background-color:#000000;
+}
+
+SimilarKlineMainWnd BaseWidget#SimilarKlineWnd
+{
+background-color:green;
+}
+
+SimilarKlineMainWnd BaseWidget#RecordReviewWnd
+{
+background-color:yellow;
+}
+
+SimilarKlineHandicapWidget  CSubTab#subtab
+{
+background:transparent;
+}
+
+/***************************相似K线***********************/

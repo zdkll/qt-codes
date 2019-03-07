@@ -1,0 +1,146 @@
+﻿/****************************************************************
+name_id:MainStatusBar
+description:主界面的底部状态栏
+*******************************************************************/
+MainStatusBar{
+border-top:1px solid #2f2f2f;
+background-color:#070b1a;
+}
+
+MainStatusBar QWidget#zeroRowCol0{
+max-height:20px;
+min-height:20px;
+border-bottom:1px solid #414141;
+border-top:1px solid #414141;
+background:#1D1D1D;
+}
+
+
+MainStatusBar QWidget#zeroRowCol0 >HZLine
+{
+min-height:12px;
+max-height:12px;
+color:#414141;
+}
+
+MainStatusBar QWidget#FirstRowCol0{
+border-right:1px solid #414141;
+}
+
+
+MainStatusBar QWidget#FirstRowCol1{
+border-right:1px solid #414141;
+}
+
+MainStatusBar QWidget#FirstRowCol2{
+border-right:1px solid #414141;
+}
+
+MainStatusBar QWidget#zeroRowCol0 QLabel#centertoplbl[updown="0"]
+{
+color:#adadad;
+}
+MainStatusBar QWidget#zeroRowCol0 QLabel#centertoplbl[updown="1"]
+{
+color:#e62727;
+}
+MainStatusBar QWidget#zeroRowCol0 QLabel#centertoplbl[updown="2"]
+{
+color:#0aaa38;
+}
+
+MainStatusBar QWidget#FirstRowCol0 QPushButton#opinion
+{
+background:transparent;
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainstatusbar/opinion.png);
+}
+
+MainStatusBar ActivityLabel{
+font:normal  normal  12px  "SimSun";
+color:#c2d4ef;
+}
+
+MainStatusBar ActivityLabel#logo{
+color:red;
+}
+
+MainStatusBar QLabel#secondCol[state="rise"]
+{
+color:#e62727;
+}
+
+MainStatusBar QLabel#secondCol[state="fall"]
+{
+color:#0fc351;
+}
+
+MainStatusBar QLabel#secondCol[state="default"]
+{
+color:#cad4dc;
+}
+
+MainStatusBar ActivityLabel#more
+{
+qproperty-pixmap:url(:/skin/default/img/1mainwindow/mainstatusbar/more.png);
+margin-right:7px;
+}
+
+MainStatusBar QPushButton#more
+{
+border:none;
+margin-right:7px;
+max-width:12px;
+min-width:12px;
+max-height:12px;
+min-height:12px;
+background-image:url(:/skin/default/img/1mainwindow/mainstatusbar/more.png);
+background-position:center;
+}
+MainStatusBar QPushButton#more:hover
+{
+background-image:url(:/skin/default/img/1mainwindow/mainstatusbar/more_hover.png);
+}
+
+MainStatusBar QPushButton#online
+{
+border:none;
+margin-left:11px;
+margin-right:6px;
+max-width:12px;
+min-width:12px;
+max-height:10px;
+min-height:10px;
+background-position:center;
+}
+
+
+MainStatusBar QPushButton#online[online=true]
+{
+border-image:url(:/skin/default/img/1mainwindow/mainstatusbar/Online.png);
+}
+
+MainStatusBar QPushButton#online[online=false]
+{
+border-image:url(:/skin/default/img/1mainwindow/mainstatusbar/offline.png);
+}
+
+
+
+/*跑马灯*/
+MarqueeGraphicsView{
+    border:none;
+    background-color:#0e0e0e;
+    qproperty-m_normalTextClr: #adadad;
+    qproperty-m_selectedTextClr: yellow;
+    qproperty-m_fontFamily:'宋体';
+    qproperty-m_fontSize:12;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,302 @@
+﻿/****************************************************************
+name_id:MiniMornitorWnd
+description:迷你盯盘
+*******************************************************************/
+MiniMornitorWnd{
+background:transparent;
+
+min-width:260px;
+max-width:260px;
+min-height:590px;
+max-height:590px;
+
+border:1px solid #262626;
+}
+
+MiniTitleBar{
+background:#0e0e0e;
+min-height:40px;
+max-height:40px;
+border-bottom:1px solid #262626;
+}
+
+MiniTitleBar QLabel{
+font-family: "SimSun";
+font-size: 12px;
+font-weight: 400;
+color: #ffffff;
+}
+
+MiniTitleBar QPushButton
+{
+background:transparent;
+border:none;
+width: 30px;
+height: 30px;
+}
+
+MiniTitleBar QPushButton#playBtn
+{
+width:9px;
+height:11px;
+}
+MiniTitleBar QPushButton#playBtn[on=false]{
+border-image: url(:/skin/default/img/minimornitor/Play.png);
+}
+
+MiniTitleBar QPushButton#playBtn[on=true]{
+border-image: url(:/skin/default/img/minimornitor/Pause.png);
+}
+
+MiniTitleBar QPushButton#maxBtn{
+width:16px;
+height:16px;
+border-image: url(:/skin/default/img/minimornitor/Zoomin.png);
+}
+
+
+MiniTitleBar QPushButton#minBtn{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_mini.png) 0 0 0 0 repeat;
+}
+MiniTitleBar QPushButton#minBtn:hover{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_mini.png) 0 0 0 30 repeat;
+}
+MiniTitleBar QPushButton#minBtn:pressed{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_mini.png) 0 0 0 60 repeat;
+}
+MiniTitleBar QPushButton#minBtn:disabled{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_mini.png) 0 0 0 90 repeat;
+}
+
+MiniTitleBar QPushButton#closeBtn{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_close.png) 0 0 0 0 repeat;
+}
+MiniTitleBar QPushButton#closeBtn::hover{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_close.png) 0 0 0 30 repeat;
+}
+MiniTitleBar QPushButton#closeBtn::pressed{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_close.png) 0 0 0 60 repeat;
+}
+MiniTitleBar QPushButton#closeBtn::disabled{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_close.png) 0 0 0 90 repeat;
+}
+
+
+MiniMornitorWnd SelfStockRollPanel
+{
+background:#0e0e0e;
+max-height:62px;
+min-height:62px;
+}
+
+SelfStockRollPanel QLabel#name
+{
+font:16px "SimSun";
+color:#cad4dc;
+}
+
+SelfStockRollPanel QLabel#code
+{
+font:14px "Arial";
+color:#cad4dc;
+}
+
+
+SelfStockRollPanel QLabel#price
+{
+font:bold 24px "Arial";
+color:#cad4dc;
+}
+
+
+SelfStockRollPanel QLabel#arrow{
+background:transparent;
+max-width:11px;
+min-width:11px;
+max-height:15px;
+min-height:15px;
+}
+
+
+SelfStockRollPanel QLabel#change, QLabel#changerate
+{
+font:bold 13px "Arial";
+color:#cad4dc;
+}
+/*
+SelfStockRollPanel QLabel#changerate
+{
+font:bold 13px "ArialMT";
+color:#cad4dc;
+}
+*/
+
+SelfStockRollPanel QLabel#price[QuotePanelDirc="0"],
+QLabel#change[QuotePanelDirc="0"], QLabel#changerate[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+SelfStockRollPanel QLabel#price[QuotePanelDirc="1"],
+QLabel#change[QuotePanelDirc="1"], QLabel#changerate[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+SelfStockRollPanel QLabel#price[QuotePanelDirc="2"],
+QLabel#change[QuotePanelDirc="2"], QLabel#changerate[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+SelfStockRollPanel QLabel#price[QuotePanelDirc="3"],
+QLabel#change[QuotePanelDirc="3"], QLabel#changerate[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+SelfStockRollPanel QLabel#arrow[state="rise"]
+{
+image:url(:/skin/default/img/minimornitor/RIGHT-rise.png);
+}
+
+SelfStockRollPanel QLabel#arrow[state="fall"]
+{
+image:url(:/skin/default/img/minimornitor/RIGHT-fall.png);
+}
+
+SelfStockRollPanel QLabel#arrow[state="unknown"]
+{
+image:url("");
+}
+MiniMornitorWnd MiniNaveBar
+{
+background:transparent;
+}
+
+
+MiniNaveBar QPushButton
+{
+background:#272727;
+color:#adadad;
+border:none;
+height:26px;
+font:12px "SimSun";
+padding-left:12px;
+text-align:left;
+}
+
+MiniNaveBar QPushButton:checked
+{
+background:#2f2f2f;
+color:#ffffff;
+}
+
+MiniMornitorWnd QStackedWidget
+{
+background:#0e0e0e;
+}
+
+MiniMornitorWnd SelfStockPanel
+{
+background:transparent;
+}
+
+SelfStockWiget{
+background:red;
+}
+
+
+MinTrendWiget QWidget#title{
+background:#272727;
+}
+
+
+MinTrendWiget QWidget#title QLabel{
+color:#adadad;
+font:12px "SimSun";
+}
+
+
+MinTrendWiget CSubTab#roottab QPushButton
+{
+background:transparent;
+max-height:20px;
+min-height:20px;
+color:#adadad;
+border-radius:2px;
+font:12px "SimSun";
+padding-left:7px;
+padding-right:7px;
+}
+
+MinTrendWiget CSubTab#roottab QPushButton:hover
+{
+background:#414141;
+color:#ffffff;
+}
+
+MinTrendWiget CSubTab#roottab QPushButton:checked
+{
+background:#414141;
+color:#ffffff;
+}
+
+
+MiniMornitorWnd MarketChangePanel
+{
+background:transparent;
+}
+
+
+StockRollStatusBar
+{
+background:#272727;
+max-height:26px;
+min-height:26px;
+}
+
+
+StockRollStatusBar QPushButton
+{
+border:none;
+width: 15px;
+height: 15px;
+}
+StockRollStatusBar QPushButton#rivet[fixed=false]
+{
+border-image:url(:/skin/default/img/minimornitor/rivet01.png);
+}
+
+StockRollStatusBar QPushButton#rivet[fixed=false]:hover
+{
+border-image:url(:/skin/default/img/minimornitor/rivet_hover01.png);
+}
+
+StockRollStatusBar QPushButton#rivet[fixed=true]
+{
+border-image:url(:/skin/default/img/minimornitor/rivet02.png);
+}
+
+StockRollStatusBar QPushButton#rivet[fixed=true]:hover
+{
+border-image:url(:/skin/default/img/minimornitor/rivet_hover02.png);
+}
+
+StockRollStatusBar QLabel
+{
+color:#adadad;
+font 12px "ArialMT";
+}
+
+StockRollStatusBar QLabel#text[updown="0"]
+{
+color:#adadad;
+}
+
+StockRollStatusBar QLabel#text[updown="1"]
+{
+color:#e62727;
+}
+
+StockRollStatusBar QLabel#text[updown="2"]
+{
+color:#0aaa38;
+}
+

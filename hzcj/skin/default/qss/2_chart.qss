@@ -1,0 +1,276 @@
+﻿/********************************************************************
+created: 2018/04/17
+author: min.cheng
+purpose: 统一配置所有分时/K线绘图样式
+*********************************************************************/
+
+
+/*- B ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:BaseCanvas
+description:K线，分时，指标绘图基类窗口样式
+*******************************************************************/
+
+BaseCanvas
+{
+    background-color:transparent;
+    qproperty-m_bkClr: #0c1215;
+    qproperty-m_containerBorderClr: #414141;
+    qproperty-m_containerTitleBkClr: #222222;
+    qproperty-m_containerTitleTextClr: #b1bbc3;
+    qproperty-m_containerTitleFontFamily:'SimSun';
+    qproperty-m_containerTitleFontSize:11;
+
+    qproperty-m_crossLineFontFamily:'Arial';
+    qproperty-m_crossLineFontSize:11;
+    qproperty-m_crossLineTextClr:#b1bbc3;
+    qproperty-m_crossLineRcBkClr:#0c1215;
+    qproperty-m_crossLineClr:#414141;
+    qproperty-m_crossLineClostPtClr:#4f9bff;
+    qproperty-m_crossLineAvgPtClr:#ffa200;
+    qproperty-m_gridClr:#121917;
+    qproperty-m_equalClr:#b1bbc3;
+    qproperty-m_upClr:#e62727;
+    qproperty-m_downClr:#0aaa38;
+}
+
+BaseCanvas QPushButton#setButton{
+    border-image: url(:/skin/default/img/basecanvas/tubiao_13_01.png);
+}
+
+BaseCanvas QPushButton#setButton::hover{
+    border-image: url(:/skin/default/img/basecanvas/tubiao_13_02.png);
+}
+
+BaseCanvas QPushButton#setButton::pressed{
+    border-image: url(:/skin/default/img/basecanvas/tubiao_13_03.png);
+}
+
+BaseCanvas QPushButton#hideButton{
+    border-image: url(:/skin/default/img/basecanvas/tubiao_12_01.png);
+}
+
+BaseCanvas QPushButton#hideButton::hover{
+    border-image: url(:/skin/default/img/basecanvas/tubiao_12_02.png);
+}
+
+BaseCanvas QPushButton#hideButton::pressed{
+    border-image: url(:/skin/default/img/basecanvas/tubiao_12_03.png);
+}
+
+BaseCanvas QPushButton#plusButton{
+    border-image: url(:/skin/default/img/basecanvas/amplify.png);
+}
+
+BaseCanvas QPushButton#plusButton::hover{
+    border-image: url(:/skin/default/img/basecanvas/amplify-hover.png);
+}
+
+BaseCanvas QPushButton#plusButton::pressed{
+    border-image: url(:/skin/default/img/basecanvas/amplify-hover.png);
+}
+
+BaseCanvas QPushButton#subButton{
+    border-image: url(:/skin/default/img/basecanvas/narrow.png);
+}
+
+BaseCanvas QPushButton#subButton::hover{
+    border-image: url(:/skin/default/img/basecanvas/narrow-hover.png);
+}
+
+BaseCanvas QPushButton#subButton::pressed{
+    border-image: url(:/skin/default/img/basecanvas/narrow-hover.png);
+}
+
+/*- end ---------------------------------------------------------------------*/
+
+/*- M ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:KlineCanvas
+description:K线窗口样式
+*******************************************************************/
+KlineCanvas
+{
+    qproperty-m_maxMinPriceFontFamily:"Arial";
+    qproperty-m_maxMinPriceFontSize:11;
+    qproperty-m_maxMinPriceTextClr:#b1bbc3;
+    qproperty-m_maxMinPriceLineClr:#b1bbc3;
+
+    qproperty-m_yaxisFontFamily:"Arial";
+    qproperty-m_yaxisFontSize:11;
+    qproperty-m_yaxisTextClr:#b1bbc3;
+
+    qproperty-m_xaxisFontFamily:"Arial";
+    qproperty-m_xaxisFontSize:11;
+    qproperty-m_xaxisTextClr:#696969;
+
+    qproperty-m_xaxisScaleClr:#030303;
+}
+
+/*- end ---------------------------------------------------------------------*/
+
+
+/*- M ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:MinCanvas
+description:分时窗口样式
+*******************************************************************/
+MinCanvas
+{
+    qproperty-m_xaxisFontFamily:"Arial";
+    qproperty-m_xaxisFontSize:11;
+    qproperty-m_xaxisTextClr: #b1bbc3;
+    qproperty-m_minChartBottomLineClr: #020608;
+    qproperty-m_gridClr: #12191d;
+    qproperty-m_upClr: #e62727;
+    qproperty-m_downClr: #0aaa38;
+    qproperty-m_yaxisFontFamily:"Arial";
+    qproperty-m_yaxisFontSize:11;
+    qproperty-m_minLineClr:#3682e6;
+    qproperty-m_minAvgLineClr:#e68919;
+    qproperty-m_daiesFontFamily:"Arial";
+    qproperty-m_daiesFontSize:12;
+    qproperty-m_daiesTextClr:#414141;
+    qproperty-m_daiesGridLineClr:#1C2D43;
+    qproperty-m_daiesTopHLineClr:#444444;
+
+    /*异动相关*/
+    qproperty-m_abNormalLineClr: #6B7B8B;
+    qproperty-m_abNormalRcBkClr: #535E69;
+    qproperty-m_abNormalPtBkClr: #4497e2;
+    qproperty-m_abNormalFontFamily:"Arial";
+    qproperty-m_abNormalFontSize:12;
+    qproperty-m_abNormalTextClr:#ffffff;
+}
+
+/*- end ---------------------------------------------------------------------*/
+
+
+
+/*- H ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:HsagPage
+description:指标和周期的tab配置
+*******************************************************************/
+
+HsagPage CSubTab#indiTab QPushButton
+{
+font-size:10px;
+font-family: "Arial";
+min-width:50px;
+min-height:20px;
+background-color:#070707;
+border-style: solid ;
+color:white;
+}
+
+HsagPage  CSubTab#indiTab QPushButton:checked
+{
+background-color:#4873ba;
+color:#ffffff;
+}
+
+HsagPage  CSubTab#indiTab QPushButton:hover
+{
+background-color:red;
+color: white;
+}
+/*- end ---------------------------------------------------------------------*/
+
+/*- H ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:ChartCrossDlg
+description:十字信息小窗
+*******************************************************************/
+ChartCrossDlg
+{
+    background: rgba(47,47,47, 60%);
+    border: 1px solid #010101;
+}
+
+CrossPanel QLabel#filedName{
+color:#cad4dc;
+font-size:12px;
+font-family: "SimSun";
+}
+
+CrossPanel QLabel#filedValue[QuoteDirc="quote_up"]{
+color:#e62727;
+font-size:11px;
+font-family: "Arial";
+}
+
+CrossPanel QLabel#filedValue[QuoteDirc="quote_down"]{
+color:#0aaa38;
+font-size:11px;
+font-family: "Arial";
+}
+
+CrossPanel QLabel#filedValue[QuoteDirc="quote_equal"]{
+color:#cad4dc;
+font-size:11px;
+font-family: "Arial";
+}
+/*- end ---------------------------------------------------------------------*/
+
+/****************************QComboBox*****************************************/
+
+BaseCanvas QComboBox#restoration {
+        background-color:transparent;
+        font-size:12px;
+        font-family:"SimSun";
+        color:#3682e6;
+        border-radius: 2px;
+}
+
+BaseCanvas QComboBox::drop-down {
+        width: 7px;
+        height: 4px;
+        border: none;
+        background: transparent;
+        padding-top:8px;
+}
+
+BaseCanvas QComboBox::drop-down:hover {
+        image: url(:/skin/default/img/basecanvas/fenshi_pull_down_hover.png);
+}
+
+BaseCanvas QComboBox::down-arrow {
+        image: url(:/skin/default/img/basecanvas/fenshi_pull_down.png);
+}
+
+BaseCanvas QComboBox::down-arrow:hover {
+        image: url(:/skin/default/img/basecanvas/fenshi_pull_down_hover.png);
+}
+
+BaseCanvas QComboBox QAbstractItemView {
+        width: 60;
+        border: 1px solid rgb(100, 100, 100);
+        background: rgb(68, 69, 73);
+        outline: none;
+}
+
+BaseCanvas QComboBox QAbstractItemView::item {
+        height: 25px;
+        color: rgb(175, 175, 175);
+}
+
+BaseCanvas QComboBox QAbstractItemView::item:selected {
+        background: rgba(255, 255, 255, 40);
+        color: rgb(230, 230, 230);
+}
+
+/***************************************************************************/
+/*BiddingChar 集合竞价*/
+BiddingStyle
+{
+background-color:transparent;
+qproperty-m_bkClr: #0c1215;
+qproperty-m_titleTextClr: #b1bbc3;
+qproperty-m_minLineClr:#e64747;
+
+qproperty-m_gridClr: #12191d;
+qproperty-m_upClr: #e62727;
+qproperty-m_downClr: #0aaa38;
+qproperty-m_equalClr:#b1bbc3;
+}

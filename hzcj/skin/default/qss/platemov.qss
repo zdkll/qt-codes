@@ -1,0 +1,116 @@
+﻿#HZPlateMoveMarster #HZPlateMove
+{
+    background:#0e0e0e;
+/*    color:#8d8d8d;*/
+}
+
+#scrollArea, #scrollAreaWidgetContents
+{
+    border:none;
+    background:transparent;
+}
+
+#HZPlateMove QLabel
+{
+    font-family:"SimSun";
+    color:#adadad;
+    border-radius:2px;
+    background:transparent;
+}
+
+#HZItemButton[isMarster=true] #LabTitle, #HZItemButton[isMarster=true]
+{
+    font-size:14px;
+    color:#adadad;
+    background:transparent;
+}
+
+#HZItemButton[isMarster=false] #LabTitle, #HZItemButton[isMarster=false]
+{
+    font-size:12px;
+    color:#adadad;
+    background:#191919;
+}
+
+#HZLabelDisplayItem[status="red"]
+{
+    font-family:"ArialMT";
+    font-size:12px;
+    color:#e62727;
+}
+
+#HZLabelDisplayItem[status="white"]
+{
+    font-family:"ArialMT";
+    font-size:12px;
+    color:white;
+}
+
+#HZLabelDisplayItem[status="blue"]
+{
+    font-family:"ArialMT";
+    font-size:12px;
+    color:green;
+}
+
+
+#HZPlateMoveMarster #Move_Title
+{
+    font-family:"SimSun";
+    font-size:12px;
+    color:#adadad;
+    background:#272727;
+}
+
+
+#scrollArea QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+#scrollArea QScrollBar::handle:vertical
+{
+    background-color:#2e2e2e;
+    border-radius:3px;
+    margin-left: 3px;
+    min-height: 20px;
+    margin-right:3px;
+}
+#scrollArea QScrollBar::add-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: bottom;
+    subcontrol-origin:margin;
+}
+
+#scrollArea QScrollBar::sub-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: top;
+    subcontrol-origin:margin;
+}
+
+#scrollArea QScrollBar::up-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+#scrollArea QScrollBar::down-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+#scrollArea QScrollBar::add-page:vertical,#scrollArea QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+

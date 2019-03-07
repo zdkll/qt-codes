@@ -1,0 +1,136 @@
+﻿#HZCalanderCtrl
+{
+    background:#414141;
+    border-bottom:3px solid #3c3c3c;
+}
+
+#frameTitleBar
+{
+    background:#414141;
+}
+
+#frameBottomBar
+{
+    background:#222222;
+}
+
+#frameDate
+{
+    border-left:1px solid #414141;
+    border-top:1px solid #414141;
+    border-right:1px solid #414141;
+    background:#222222;
+}
+
+#CalandarDisplay
+{
+    border-top: 2px solid transparent;
+}
+
+#HZCalanderCtrl #btn_today, #HZCalanderCtrl #labDisplay
+{
+    font:normal 12px "SimSun";
+    color:white;
+    background:transparent;
+}
+
+#HZCalanderCtrl #btn_today:hover
+{
+    background:transparent;
+}
+
+#HZCalanderCtrl #btnYSub
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/time01.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+#HZCalanderCtrl #btnMSub
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/time02.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+#HZCalanderCtrl #btnMAdd
+{
+    background:transparent;
+   background-image:url(:/skin/default/img/infopage/time03.png);
+   background-repeat:no-repeat;
+   background-position:center;
+}
+
+#HZCalanderCtrl #btnYAdd
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/time04.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+#HZCalanderCtrl #btnYSub:hover
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/time01_hover.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+#HZCalanderCtrl #btnMSub:hover
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/time02_hover.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+#HZCalanderCtrl #btnMAdd:hover
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/time03_hover.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+#HZCalanderCtrl #btnYAdd:hover
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/time04_hover.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+CalandarBtn[forward=true]
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/right.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+CalandarBtn[forward=false]
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/left.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+CalandarBtn[forward=true]:hover
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/right_hover.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+CalandarBtn[forward=false]:hover
+{
+    background:transparent;
+    background-image:url(:/skin/default/img/infopage/left_hover.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}

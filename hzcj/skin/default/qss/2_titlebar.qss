@@ -1,0 +1,119 @@
+﻿/****************************************************************
+name_id:MainTitleBar
+description:主界面的标题栏样式调节
+*******************************************************************/
+
+MainTitleBar
+{
+background:#1d1d1d;
+}
+
+/*左侧按钮*/
+MainTitleBar QPushButton#login, QPushButton#register,
+             QPushButton#message,QPushButton#backtrack,
+             QPushButton#mini
+{
+background:transparent;
+color:#adadad;
+font:  12px "Arial";
+border: none;
+}
+
+MainTitleBar QPushButton#message
+{
+width:26px;
+height:19px;
+background-image:url(:/skin/default/img/1mainwindow/maintitlebar/message.png);
+}
+
+MainTitleBar QPushButton#backtrack
+{
+width:19px;
+height:18px;
+background-image:url(:/skin/default/img/1mainwindow/maintitlebar/return.png);
+}
+
+MainTitleBar QPushButton#backtrack:hover
+{
+background-image:url(:/skin/default/img/1mainwindow/maintitlebar/return_hover.png);
+}
+
+MainTitleBar QPushButton#mini
+{
+width:16px;
+height:16px;
+background-image:url(:/skin/default/img/1mainwindow/maintitlebar/Zoomout.png);
+}
+
+
+MainTitleBar >HZLine
+{
+min-height:12px;
+max-height:12px;
+color:#414141;
+}
+
+/*右侧菜单*/
+MainTitleBar QMenuBar#titlemenuBar
+{
+background-color:transparent;
+font:  12px "SimSun";
+}
+
+MainTitleBar QMenuBar::item
+{
+color:#adadad;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+     background: transparent;
+     color:#5fa6f6;
+ }
+
+QMenuBar::item:pressed {
+     background: #222222;
+     color:#ffffff;
+ }
+
+
+MainTitleBar QMenuBar::item:pressed
+{
+image:url(:/skin/default/img/1mainwindow/maintitlebar/down.png);
+image-position:right;
+color:#ffffff;
+}
+
+MainTitleBar QMenu {
+        background: rgb(34, 36, 38);
+        font:  12px "SimSun";
+}
+
+
+MainTitleBar QMenu::item {
+        background-color:transparent;
+        color:#adadad;
+        padding :5px;
+}
+
+
+MainTitleBar QMenu::item:selected {
+        background-color:#1c4675;
+        color:#ffffff;
+}
+
+MainTitleBar QFrame#customerservice
+{
+border-image:url(:/skin/default/img/1mainwindow/maintitlebar/customer_service.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+

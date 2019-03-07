@@ -1,0 +1,103 @@
+﻿/****************************************************************
+description:缩略图样式调节
+*******************************************************************/
+
+/***************************SuolueBase样式-begin***************************/
+
+SuolueBase {
+border-image:url(:/skin/default/img/suoleChart/cornerline1BG.png);
+}
+
+SuolueBase SuolueTitleBase#normalTitle{
+    background-color:#191919;
+    border-bottom:1px solid #2E2E2E;
+}
+
+SuolueBase SuolueTitleBase#nobtBorderTitle{
+    background-color:#191919;
+}
+
+SuolueBase SuolueTitleBase#optionalList{
+    background-color:#222222;
+    border-bottom:1px solid #2E2E2E;
+}
+
+
+SuolueBase SuolueTitleBase#hostInfo{
+    background-color:#2f2f2f;
+    border-bottom:1px solid #2E2E2E;
+}
+
+HqSuolueTitle
+{
+    background-color:#2f2f2f;
+}
+
+HqSuolueTitle >HZLine
+{
+    width:2px;
+    color:#222222;
+}
+
+HqSuolueTitle QLabel
+{
+    font:normal  normal  12px  "SimSun";
+    color:#ffffff;
+    padding-left:12px;
+}
+
+SuolueTitleBase QPushButton#more{
+background-image: url(":/skin/default/img/suoleChart/more.png");
+background-repeat:none;
+background-position: center;
+border:none;
+}
+
+
+SuolueTitleBase QPushButton#more:hover{
+background-image: url(":/skin/default/img/suoleChart/more_hover.png");
+background-repeat:none;
+background-position: center;
+}
+
+SuolueTitleBase CSubTab#roottab
+{
+    background-color:transparent;
+}
+
+SuolueTitleBase CSubTab#roottab QPushButton{
+background-color:#2f2f2f;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+
+height:20px;
+padding-top:0px;
+padding-bottom:0px;
+padding-left:12px;
+padding-right:12px;
+
+border-style:solid;
+}
+
+SuolueTitleBase CSubTab#roottab QPushButton:checked
+{
+background-color:#4e4e4e;
+color:#ffffff;
+height:20px;
+}
+
+InfoWidget QTableView
+{
+color: #adadad;                                       /*表格内文字颜色*/
+font: 12px "SimSun";
+gridline-color: black;                              /*表格内框颜色*/
+background-color: rgb(25, 25, 25);               /*表格内背景色*/
+alternate-background-color: rgb(64, 64, 64);
+selection-color: white;                             /*选中区域的文字颜色*/
+selection-background-color: #2e2e2e;        /*选中区域的背景色*/
+border-radius: 0px;
+}
+
+/***************************SuolueBase样式-end***************************/
+

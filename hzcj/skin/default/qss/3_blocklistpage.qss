@@ -1,0 +1,267 @@
+﻿/********************************************************************
+created: 2018/04/17
+author: min.cheng
+purpose: 板块列表样式
+*********************************************************************/
+OptionStockPage
+{
+    background-color:#000000;
+}
+
+BlockListMainWnd QLabel#titleText
+{
+    font:normal  normal  12px  "SimSun";
+    color:#ffffff;
+    padding-left:12px;
+}
+
+BlockListMainWnd HZLine
+{
+   color:#000000;
+}
+
+BlockListMainWnd  CSubTab#roottab QPushButton{
+background-color:#222222;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+height:26px;
+border-radius: 1px;
+}
+
+BlockListMainWnd  CSubTab#roottab QPushButton:checked
+{
+background-color:#3c3c3c;
+color:#ffffff;
+}
+
+
+/*底部隐藏显示按钮*/
+BlockListCategoryWnd QToolButton#bottomExpandButton
+{
+image:url(:/skin/default/img/expansion/expansion-hover03.png);
+image-position:center;
+border:none;
+}
+
+BlockListCategoryWnd QToolButton#bottomExpandButton:checked
+{
+image:url(:/skin/default/img/expansion/expansion03.png);
+}
+
+/*测试布局 */
+BlockListMainWnd QWidget#panel
+{
+    background-color:green;
+}
+
+/*测试布局 end */
+
+
+
+/***************************顶部 板块导航栏区域样式 begin***************************/
+BlockMonitorPage BkListBottomNavigator#bkBottomNavWnd
+{
+background-color:#222222;
+border-top:1px solid #2f2f2f;
+}
+
+/********************************************************************
+板块QToolButton样式
+/********************************************************************/
+BkListBottomNavigator QToolButton
+{
+    margin-top:1px;
+    max-width:70px;
+    min-width:70px;
+    max-height:22px;
+    min-height:22px;
+    background:#191919;
+    border:none;
+    font-family:"SimSun";
+    font-size:12px;
+    color:#adadad;
+    text-align:center;
+}
+
+
+
+BkListBottomNavigator QToolButton:hover
+{
+    background:#414141;
+    color:#ffffff;
+}
+
+BkListBottomNavigator QToolButton#more
+{
+    max-width:12px;
+    min-width:12px;
+    max-height:22px;
+    min-height:22px;
+    background:transparent;
+    border-style:solid;
+    border-left:1px solid #222222;
+    border-right:1px solid #222222;
+}
+
+BkListBottomNavigator QToolButton#more::menu-indicator
+{
+    image:url(:/skin/default/img/tableview/down02.png);
+    subcontrol-origin: content;
+    subcontrol-position: center;
+    margin-right: 1px;
+}
+
+BkListBottomNavigator QToolButton#more::menu-indicator:pressed
+{
+    image:url(:/skin/default/img/tableview/down.png);
+}
+
+
+
+BkListBottomNavigator QToolButton:checked, QToolButton#more:checked
+{
+    background:#414141;
+    color:#ffffff;
+}
+
+
+/********************************************************************
+分类部件样式
+/********************************************************************/
+BkListBottomNavigator  QWidget#hywidget,QWidget#gnwidget, QWidget#areawidget
+{
+    margin-top:1px;
+    max-height:22px;
+    min-height:22px;
+    background:#191919;
+}
+
+
+BkListBottomNavigator  QWidget#hywidget:hover, QWidget#gnwidget:hover, QWidget#areawidget:hover
+{
+    background:#414141;
+}
+
+/***************************顶部 板块导航栏区域样式 end***************************/
+
+/***************************顶部 板块导航下拉列表样式***************************/
+DrowDownListWidget
+{
+background:transparent;
+border:1px solid #3e3e3e;
+}
+
+DrowDownListWidget QWidget#title
+{
+background:#222222;
+}
+
+DrowDownListWidget QWidget#title QPushButton
+{
+background:transparent;
+color:#ffffff;
+font:12px "SimSun";
+border:none;
+height:22px;
+padding-left:8px;
+padding-right:8px;
+}
+
+DrowDownListWidget QWidget#title QPushButton:hover
+{
+background:#414141;
+}
+
+DrowDownListWidget  QTableWidget
+{
+background:black;
+}
+
+DrowDownListWidget QTableWidget
+{
+background:#131313;
+color: #adadad;
+font-family:"SimSun";
+font-size:12px;
+padding-left:1px;
+}
+
+DrowDownListWidget QTableWidget
+{
+outline:0px;
+}
+
+DrowDownListWidget QTableWidget::Item:hover
+{
+background:#1c4676;
+color: #ffffff;
+}
+
+DrowDownListWidget QTableWidget::Item:selected
+{
+background:#1c4676;
+color: #ffffff;
+}
+
+
+/*垂直滚动条整体*/
+DrowDownListWidget QTableWidget QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+DrowDownListWidget QTableWidget  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+
+DrowDownListWidget QTableWidget   QScrollBar::handle:vertical:hover {
+background: #505050;
+}
+
+DrowDownListWidget QTableWidget QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+DrowDownListWidget QTableWidget QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+DrowDownListWidget QTableWidget  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+DrowDownListWidget QTableWidget QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+
+DrowDownListWidget QTableWidget QScrollBar::add-page:vertical,DrowDownListWidget QTableWidget QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+/***************************顶部 板块导航下拉列表样式 end***************************/
+

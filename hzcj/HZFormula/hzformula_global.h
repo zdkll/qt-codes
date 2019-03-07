@@ -1,0 +1,12 @@
+﻿#ifndef HZFORMULA_GLOBAL_H
+#define HZFORMULA_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(HZFORMULA_LIBRARY)
+#  define HZFORMULASHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define HZFORMULASHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // HZFORMULA_GLOBAL_H

@@ -1,0 +1,123 @@
+﻿/*start page*/
+#UpdateStartFrame
+{
+    border-image: url(:/img/install-update-BG_03.png);
+}
+
+#frameUpdateTips
+{
+    border: 1px solid #86BBEC;
+    background:#ffffff;
+}
+
+#lab_start_version
+{
+    font: 75 18px "微软雅黑";
+    color:#898989;
+}
+
+#lab_start_midline
+{
+    background:#86BBEC;
+}
+
+#tb_start_msg
+{
+    font: 14px "微软雅黑";
+    border: 2px solid transparent;
+    color:#4890d4;
+    background:#ffffff;
+}
+
+#btn_start_left
+{
+    border-image:url(:/img/install-button02.png);
+}
+
+#btn_start_left:hover
+{
+    border-image:url(:/img/install-button02_hover.png);
+}
+
+#btn_start_right
+{
+    border-image:url(:/img/install-button03.png);
+}
+
+#btn_start_right:hover
+{
+    border-image:url(:/img/install-button03_hover.png);
+}
+
+
+/*mid page*/
+#UpdateMidFrame
+{
+    border-image:url(:/img/Update-BG.png);
+}
+
+#lab_mid_update_tips
+{
+    font: 16px "微软雅黑";
+    color:#0058b3;
+    background:transparent;
+}
+
+#lab_mid_process
+{
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #1744a6, stop:1 #00baff);
+}
+
+#btn_mid_cancle
+{
+    border-image:url(:/img/install-button05.png);
+}
+
+#btn_mid_cancle:hover
+{
+    border-image:url(:/img/install-button05_hover.png);
+}
+
+/*end page*/
+#UpdateEndFrame
+{
+    border-image:url(:/img/Update complete-BG.png);
+}
+
+#btn_end_over
+{
+    border-image:url(:/img/install-button04.png);
+}
+
+#btn_end_over:hover
+{
+    border-image:url(:/img/install-button04_hover.png);
+}
+
+#cbox_end_sel
+{
+    font: 12px "微软雅黑";
+    color:#232323;
+}
+
+#cbox_end_sel::indicator
+{
+    width: 15px;
+    height:15px;
+}
+
+#cbox_end_sel::indicator:unchecked
+{
+    image: url(:/img/uncheck.png);
+}
+
+#cbox_end_sel::indicator:unchecked:hover
+{
+    image: url(:/img/uncheck_hover.png);
+}
+
+#cbox_end_sel::indicator:checked
+{
+    image: url(:/img/Checked.png);
+}
+

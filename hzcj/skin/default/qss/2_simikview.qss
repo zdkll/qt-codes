@@ -1,0 +1,92 @@
+﻿SimiKTableView
+{
+qproperty-riseColor:#e62727;
+qproperty-plainColor:#cad4dc;
+qproperty-fallColor:#0aaa38;
+
+qproperty-normalColor:#cad4dc;
+}
+
+
+/**************自定相似K线表头表格****************************************/
+SimiKHeaderView
+{
+qproperty-upPixmap: url(:/skin/default/img/tableview/up.png);
+qproperty-downPixmap:url(:/skin/default/img/tableview/down.png);
+qproperty-fontColor:#adadad;
+
+background-color:#333a40;
+border:none;
+height:24px;
+
+gridline-color:#191919;
+font:normal 12px "SimSun" ;
+color: #adadad;
+}
+
+/******SimiKTableView***********/
+SimiKTableView
+{
+background-color:#191919;
+selection-background-color:#1c4676;
+border:none;
+gridline-color:#232323;
+}
+
+/****************scrollbar   vertical**************************/
+SimiKView  QScrollBar:vertical
+{
+width:14px;
+background-color:#0e0e0e;
+margin-top:14px;
+margin-bottom:14px;
+}
+
+SimiKView   QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+min-height:  20px;
+margin-left:3px;
+margin-right:3px;
+}
+
+SimiKView   QScrollBar::handle:vertical:hover {
+background: #505050;
+}
+
+SimiKView   QScrollBar::add-page:vertical
+{
+background-color:#0e0e0e;
+}
+
+SimiKView    QScrollBar::sub-page:vertical
+{
+background-color:#0e0e0e;
+}
+
+SimiKView    QScrollBar::sub-line:vertical
+{
+background-color:#0e0e0e;
+height: 14px;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+SimiKView    QScrollBar::add-line:vertical
+{
+background-color:#0e0e0e;
+height: 14px;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+SimiKView    QScrollBar::up-arrow:vertical
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+SimiKView   QScrollBar::down-arrow:vertical
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}

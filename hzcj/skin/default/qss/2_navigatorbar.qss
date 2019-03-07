@@ -1,0 +1,111 @@
+﻿MainNavigatorBar
+{
+background-color:transparent;
+}
+
+MainNavigatorBar HZLine
+{
+   color:#000000;
+}
+
+MainNavigatorBar QPushButton
+{
+font-family:"SimSun";
+font-size:12px;
+color:#ffffff;
+
+border-style: none ;
+border-width:0px;
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton
+{
+/*background-color:rgb(65,65,65);*/
+background-color:#414141;
+width:90px;
+height:26px;
+background-position: center;
+
+padding:0px;
+
+
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton:hover
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_g_hover.png);
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton:checked
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_checked.png);
+}
+
+
+MainNavigatorBar CSubTab#roottab QPushButton#actcenter
+{
+background:#3182cf;
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton#pcycenter
+{
+background:#3182cf;
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton#dxjj
+{
+background:#3182cf;
+}
+
+
+MainNavigatorBar CSubTab#roottab QPushButton#actcenter:hover
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_hover.png);
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton#pcycenter:hover
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_hover.png);
+}
+
+CSubTab#roottab  QPushButton#dxjj:hover
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_hover.png);
+}
+
+
+MainNavigatorBar CSubTab#roottab QPushButton#actcenter:checked
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_checked.png);
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton#pcycenter:checked
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_checked.png);
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton#dxjj:checked
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_checked.png);
+}
+
+
+MainNavigatorBar CSubTab#roottab QPushButton#productItem
+{
+background:#ee9236;
+}
+
+MainNavigatorBar CSubTab#roottab QPushButton#productItem:hover
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_y_normal.png);
+}
+
+
+MainNavigatorBar CSubTab#roottab QPushButton#productItem:checked
+{
+background-image:url(:/skin/default/img/1mainwindow/mainNavigatorBar/btn_y_check.png);
+}
+
+
+
+

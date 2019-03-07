@@ -1,0 +1,908 @@
+﻿/********************************************************************
+created: 2018/9/10
+author: juntang.xie
+purpose:窗口弹出对话框相关样式
+*********************************************************************/
+
+/*
+留言反馈对话框样式
+*/
+FeedbackDialog QWidget#title{
+background:#2F2F2F;
+}
+
+FeedbackDialog QWidget#content{
+background:#ffffff;
+}
+
+
+FeedbackDialog QWidget#title QLabel
+{
+color:#ffffff;
+font:14px "Microsoft YaHei";
+}
+
+FeedbackDialog QWidget#content QTextEdit
+{
+color:#a4a4a4;
+font:14px "Microsoft YaHei";
+boder-radius:4px;
+border:1px solid #d3d3d3;
+}
+
+FeedbackDialog QWidget#content QLineEdit
+{
+color:#a4a4a4;
+font:14px "Microsoft YaHei";
+boder-radius:4px;
+border:1px solid #d3d3d3;
+}
+
+
+
+FeedbackDialog QWidget#content QLabel
+{
+color:#ee1600;
+font:14px "Microsoft YaHei";
+}
+
+
+FeedbackDialog QWidget#content QPushButton
+{
+color:#ffffff;
+font:14px "Microsoft YaHei";
+background:#4f9efd;
+border-radius:4px;
+}
+
+FeedbackDialog QWidget#content QPushButton:hover
+{
+background: #1c4675;
+}
+
+/*
+退出对话框样式
+*/
+ExitDialog{
+max-width:510px;
+min-width:510px;
+max-height:330px;
+min-height:330px;
+}
+
+
+ExitDialog QWidget#topwidget{
+max-width:510px;
+min-width:510px;
+max-height:230px;
+min-height:230px;
+background:black;
+border-image:url(:/skin/default/img/1mainwindow/smallparts/exit.png);
+}
+
+ExitDialog QWidget#bottomwidget{
+max-width:510px;
+min-width:510px;
+max-height:100px;
+min-height:100px;
+background:white;
+}
+
+ExitDialog QCheckBox::indicator:unchecked
+{
+image: url(:/skin/default/img/login/uncheck.png);
+}
+
+ExitDialog QCheckBox::indicator:checked
+{
+image: url(:/skin/default/img/login/checked.png);
+}
+
+ExitDialog QCheckBox::indicator:unchecked:hover
+{
+image: url(:/skin/default/img/login/uncheck_hover.png);
+}
+
+ExitDialog QLabel#info
+{
+max-height:14px;
+min-height:14px;
+color:#242424;
+font:14px "Microsoft YaHei";
+border:none;
+}
+
+
+
+ExitDialog WindowControlBox QPushButton#closeBtn
+{
+width:17px;
+height:17px;
+border-image:url(:/skin/default/img/1mainwindow/smallparts/quit_btn_close.bmp) 68 0 0 0 repeat;
+}
+
+ExitDialog WindowControlBox QPushButton#closeBtn:hover
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/quit_btn_close.bmp) 17 0 0 0 repeat;
+}
+
+ExitDialog WindowControlBox QPushButton#closeBtn:pressed
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/quit_btn_close.bmp) 34 0 0 0 repeat;
+}
+
+ExitDialog QPushButton#remind
+{
+color:#555555;
+font:12px "Microsoft YaHei";
+background:transparent;
+border:none;
+}
+
+
+ExitDialog QPushButton#submit,QPushButton#cancel
+{
+width: 120px;
+height: 30px;
+}
+
+ExitDialog QPushButton#submit
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/submit.bmp) 0 0 0 0 repeat;
+}
+
+ExitDialog QPushButton#submit:hover
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/submit.bmp) 30 0 0 0 repeat;
+}
+
+
+ExitDialog QPushButton#submit:pressed
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/submit.bmp) 60 0 0 0 repeat;
+}
+
+ExitDialog QPushButton#submit:disabled
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/submit.bmp) 90 0 0 0 repeat;
+}
+
+
+ExitDialog QPushButton#cancel
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/cancel.bmp) 0 0 0 0 repeat;
+}
+
+ExitDialog QPushButton#cancel:hover
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/cancel.bmp) 30 0 0 0 repeat;
+}
+
+
+ExitDialog QPushButton#cancel:pressed
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/cancel.bmp) 60 0 0 0 repeat;
+}
+
+ExitDialog QPushButton#cancel:disabled
+{
+border-image:url(:/skin/default/img/1mainwindow/smallparts/cancel.bmp) 90 0 0 0 repeat;
+}
+
+
+/*
+短线异动对话框样式
+*/
+
+ShortTermChangeDialog{
+qproperty-minimumSize:730px 367px;
+qproperty-maximumSize:730px 367px;
+border:1px solid #3e3e3e;
+background:#010101;
+}
+
+
+ShortTermChangeDialog QWidget#title{
+qproperty-minimumSize:728px 30px;
+qproperty-maximumSize:728px 30px;
+background-color:#222222;
+}
+
+ShortTermChangeDialog QWidget#title QLabel#title{
+font:14px "Microsoft YaHei";
+color: #ffffff;
+qproperty-scaledContents:true;
+qproperty-maximumWidth:100px;
+}
+
+
+ShortTermChangeDialog QWidget#leftwidget{
+qproperty-minimumSize:322px 335px;
+qproperty-maximumSize:322px 335px;
+background:#191919;
+border-right: 1px solid #3e3e3e;
+}
+
+
+ShortTermChangeDialog QWidget#rightwidget{
+qproperty-minimumSize:406px 335px;
+qproperty-maximumSize:406px 335px;
+background:#191919;
+border-top: 1px solid #010101;
+}
+
+
+/*********************短线异动表格样式***********************/
+ShortTermChangeView
+{
+    color: #adadad;
+    font:  14px "SimSun";
+    background-color: #191919;               /*表格内背景色*/
+    selection-background-color: #2e2e2e;        /*选中区域的背景色*/
+    border-radius: 0px;
+    margin-top: 1px;
+    margin-right: 1px;
+    selection-color: #ffffff;
+}
+
+/*垂直滚动条整体*/
+ShortTermChangeView QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+ShortTermChangeView  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+ShortTermChangeView QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+ShortTermChangeView QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+ShortTermChangeView  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+ShortTermChangeView QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+ShortTermChangeView QScrollBar::add-page:vertical,ShortTermChangeView QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+/*自定义的属性设置对应的样式*/
+StyledWidget {
+        qproperty-colUpColor: #e62727;
+        qproperty-colDownColor: #0aaa38;
+        qproperty-colEqualColor: #cad4dc;
+        qproperty-colFirBold:true;
+        qproperty-colFirFontFamily: "ArialMT";
+        qproperty-colFirPixelSize: 13;
+        qproperty-colSecFontFamily: "SimSun";
+        qproperty-colSecPixelSize: 14;
+        qproperty-colThrFontFamily: "SimSun";
+        qproperty-colThrPixelSize: 14;
+        qproperty-colForBold:true;
+        qproperty-colForFontFamily: "ArialMT";
+        qproperty-colForPixelSize: 13;
+}
+
+
+
+
+
+/***********************新闻资讯表格样式******************/
+NewsView{
+background:#191919;
+/*border-top:1px solid #010101;*/
+border:none;
+}
+
+NewsView::item{
+border-top: 1px solid #010101;
+}
+
+NewsView::item:selected{
+background-color:#2e2e2e;
+}
+
+/*垂直滚动条整体*/
+NewsView QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+NewsView  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+NewsView QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+NewsView QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+NewsView  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+NewsView QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+NewsView QScrollBar::add-page:vertical,NewsView QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+NewsStyledWidget
+{
+qproperty-titileColor: #ffffff;
+qproperty-textColor: #adadad;
+qproperty-titleFontFamily: "SimSun";
+qproperty-titlePixelSize: 14;
+qproperty-textPixelSize: 12;
+qproperty-labelFontFamily: "Microsoft Yahei";
+qproperty-labelPixelSize: 8;
+qproperty-lhColor: #e73131;
+qproperty-lkColor: #0aaa38;
+qproperty-qllhColor: #e73131;
+qproperty-qllkColor: #0aaa38;
+qproperty-zxColor: #f4a122;
+qproperty-lhPixmap:url(:/skin/default/img/newsview/lihao.png);
+qproperty-lkPixmap:url(:/skin/default/img/newsview/likong.png);
+qproperty-qllhPixmap:url(:/skin/default/img/newsview/qiagnlielihao.png);
+qproperty-qllkPixmap:url(:/skin/default/img/newsview/qianglielikong.png);
+qproperty-zxPixmap:url(:/skin/default/img/newsview/zhongxing.png);
+}
+
+/***********************新闻资讯表格样式end******************/
+
+
+
+
+/***********************资金异动表格样式******************/
+FundChangeView
+{
+background:#222222;
+border:none;
+font:12px "SimSun";
+}
+
+FundChangeView:item
+{
+border-top:1px solid #2c2c2c;
+}
+
+FundChangeView:item:hover
+{
+background:#253a54;
+}
+
+FundChangeView:item:selected
+{
+background:#1c4676;
+color:#ffffff;
+}
+
+/*垂直滚动条整体*/
+FundChangeWidget QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+FundChangeWidget  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+
+FundChangeWidget   QScrollBar::handle:vertical:hover {
+background: #505050;
+}
+
+FundChangeWidget QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+FundChangeWidget QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+FundChangeWidget  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+FundChangeWidget QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+FundChangeWidget QScrollBar::add-page:vertical,FundChangeWidget QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+
+
+
+FundChangeStyledWidget
+{
+qproperty-riseColor:#e62727;
+qproperty-fallColor:#0fc351;
+qproperty-flatColor:#cad4dc;
+}
+
+/***********************资金异动表格样式end******************/
+
+
+/***********************短线异动表格样式******************/
+ShortTermChangeView
+{
+background:#191919;
+border:none;
+}
+
+ShortTermChangeView:item:hover
+{
+background:#2e2e2e;
+}
+
+
+/*垂直滚动条整体*/
+ShortTermChangeWidget QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+ShortTermChangeWidget  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+
+ShortTermChangeWidget   QScrollBar::handle:vertical:hover {
+background: #505050;
+}
+
+ShortTermChangeWidget QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+ShortTermChangeWidget QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+ShortTermChangeWidget  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+ShortTermChangeWidget QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+ShortTermChangeWidget QScrollBar::add-page:vertical,ShortTermChangeWidget QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+ShortTermChangeStyledWidget
+{
+qproperty-riseColor:#e62727;
+qproperty-fallColor:#0fc351;
+qproperty-flatColor:#cad4dc;
+}
+
+/***********************短线异动表格样式end******************/
+
+
+/***********************龙虎榜买入卖出表格样式******************/
+LhBuySellView
+{
+background:#191919;
+border:none;
+}
+
+LhBuySellView QHeaderView:section
+{
+background:#2f2f2f;
+border:none;
+color:#cad4dc;
+font:12px "SimSun";
+border-right:1px solid #222222;
+}
+
+LhBuySellView:item
+{
+border-right:1px solid #222222;
+}
+
+LhBuySellView:item:selected
+{
+background:#222222;
+color:#ffffff;
+}
+
+LhBuySellStyledWiget
+{
+qproperty-riseColor:#e62727;
+qproperty-fallColor:#0fc351;
+qproperty-flatColor:#cad4dc;
+}
+
+
+KlineInfoWidget
+{
+background:rgb(47,47,47);
+}
+
+KlineInfoWidget QLabel
+{
+color:#cad4dc;
+}
+
+KlineInfoWidget QLabel#title
+{
+color:rgb(255,74,0);
+}
+
+/***********************龙虎榜买入卖出表格样式end******************/
+
+
+/***********************自选股设置对话框*********************/
+SelfStockSettingDialog
+{
+border:1px solid #2f2f2f;
+background:transparent;
+max-width:500px;
+min-width:500px;
+min-height:320px;
+max-height:320px;
+}
+
+SelfStockSettingDialog QWidget#title
+{
+background:#2f2f2f;
+}
+
+SelfStockSettingDialog QWidget#title  QLabel
+{
+font: 14px "SimSun";
+color:#ffffff;
+}
+
+SelfStockSettingDialog QWidget#body
+{
+background:#191919;
+}
+
+SelfStockSettingDialog QWidget#body QTableWidget
+{
+border:1px solid #090909;
+background:#262626;
+}
+
+SelfStockSettingDialog QWidget#body QTableWidget::item
+{
+/*font:14px "SimSun";*/
+color:#cad4dc;
+}
+
+
+SelfStockSettingDialog QWidget#body QTableWidget::item:selected
+{
+background:#2f2f2f;
+}
+
+/*垂直滚动条整体*/
+SelfStockSettingDialog QWidget#body QTableWidget QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+SelfStockSettingDialog QWidget#body QTableWidget  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left: 3px;
+min-height: 20px;
+margin-right:3px;
+}
+
+SelfStockSettingDialog QWidget#body QTableWidget   QScrollBar::handle:vertical:hover {
+background: #505050;
+}
+
+SelfStockSettingDialog QWidget#body QTableWidget QScrollBar::add-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+SelfStockSettingDialog QWidget#body QTableWidget QScrollBar::sub-line:vertical
+{
+height: 14px;
+background-color:#0e0e0e;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+SelfStockSettingDialog QWidget#body QTableWidget  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+SelfStockSettingDialog QWidget#body QTableWidget QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+
+SelfStockSettingDialog QWidget#body QTableWidget QScrollBar::add-page:vertical,SelfStockSettingDialog QWidget#body QTableWidget QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+
+
+SelfStockSettingDialog QWidget#body QPushButton
+{
+max-width:100px;
+min-width:100px;
+max-height:24px;
+min-height:24px;
+background:#262626;
+color:#adadad;
+font:14px "SimSun";
+border:0;
+}
+
+SelfStockSettingDialog QWidget#body QPushButton:hover
+{
+background:#3182cf;
+color:#ffffff;
+}
+
+SelfStockSettingDialog QWidget#body QPushButton#menubtn
+{
+border:1px solid #090909;
+}
+
+SelfStockSettingDialog QWidget#body QPushButton#menubtn:hover
+{
+background:#3b3b3b;
+color:#cad4dc;
+}
+
+SelfStockSettingDialog QWidget#body QPushButton#btngroup
+{
+border-radius:2px;
+}
+
+
+SelfStockSettingDialog QWidget#body QLabel#info
+{
+font: 14px "SimSun";
+color:#cad4dc;
+}
+SelfStockSettingDialog QWidget#body QLabel#logo
+{
+qproperty-minimumSize:16px 16px;
+qproperty-maximumSize:16px 16px;
+border-image:url(:/skin/default/img/1mainwindow/smallparts/Tips.png);
+}
+
+SelfStockSettingDialog QWidget#body QLabel#warning
+{
+font: 12px "SimSun";
+color:#666666;
+}
+
+
+SeachStockWidget
+{
+background:#222222;
+border:1px solid #1b4471;
+}
+
+SeachStockWidget QLineEdit
+{
+background:transparent;
+border:none;
+border-bottom:1px solid #1b4471;
+color:#ffffff;
+}
+
+SeachStockWidget QWidget#body,
+SeachStockWidget SearchStockView
+{
+background:transparent;
+border:none;
+
+}
+
+SeachStockWidget QWidget#body QLabel
+{
+background:transparent;
+font: 14px "SimSun";
+color:#cad4dc;
+}
+
+SeachStockWidget SearchStockView
+{
+outline:0px;
+}
+
+SeachStockWidget QPushButton#search
+{
+background:transparent;
+border-image:url(:/skin/default/img/1mainwindow/smallparts/search.png);
+}
+
+SelfStockSettingDialog SeachStockWidget QPushButton#close
+{
+background:transparent;
+border-image:url(:/skin/default/img/1mainwindow/smallparts/close.png);
+}
+
+SearchStockView::item
+{
+/*font:12px "SimSun";*/
+color:#adadad;
+}
+
+
+SearchStockView::item:selected
+{
+background:#1c4675;
+color:#ffffff;
+}
+
+SearchStockView QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+SearchStockView QScrollBar::handle:vertical
+{
+background:#2e2e2e;
+border-radius:3px;
+margin-left:3px;
+min-height:20px;
+margin-right:3px;
+}
+
+SearchStockView QScrollBar::handle:vertical:hover
+{
+background:#505050;
+}
+
+
+SearchStockView QScrollBar::add-line:vertical,
+SearchStockView QScrollBar::sub-line:vertical
+{
+height:14px;
+background:#0e0e0e;
+}
+
+SearchStockView  QScrollBar::up-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+SearchStockView QScrollBar::down-arrow
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+SearchStockView QScrollBar::add-page:vertical,
+SearchStockView QScrollBar::sub-page:vertical
+{
+background:rgb(0,0,0,10%);
+border-radius:4px;
+}
+
+
+/***********************自选股设置对话框end******************/

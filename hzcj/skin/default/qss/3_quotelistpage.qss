@@ -1,0 +1,365 @@
+﻿/********************************************************************
+created: 2018/10/15
+author: min.cheng
+purpose: 行情页面样式
+*********************************************************************/
+QuoteListPage HZLine
+{
+   color:#000000;
+}
+
+QuoteListPage BaseWidget#rightPanel
+{
+background-color:blue;
+}
+
+/***************************左侧主要窗口区域  样式***************************/
+/*导航TAB*/
+QuoteListPageMainWnd CSubTab#topTab QPushButton{
+background-color:transparent;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+border-radius: 2px;
+width:70px;
+padding-top:4px;
+padding-bottom:4px;
+}
+
+QuoteListPageMainWnd CSubTab#topTab QPushButton:checked
+{
+background-color:#414141;
+color:#ffffff;
+}
+
+
+/*底部导航*/
+QuoteListPageMainWnd  CSubTab#sletTab QPushButton{
+background-color:#222222;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+}
+
+QuoteListPageMainWnd  CSubTab#sletTab QPushButton:checked
+{
+background-color:#414141;
+color:#ffffff;
+}
+
+/***************************左侧主要窗口区域  样式***************************/
+
+/***************************涨跌分布组件颜色窗口***************************/
+
+ColorWidget
+{
+qproperty-upColor:#f22f2f;
+qproperty-equalColor:#adadad;
+qproperty-downColor:#0aaa38;
+qproperty-contexColor:#adadad;
+qproperty-numColor:#d3d3d3;
+qproperty-upRectColor:#350c0f;
+qproperty-downRectColor:#0b2e18;
+qproperty-equalRectColor:#2f2f2f;
+qproperty-upBorderColor:#9a1f1f;
+qproperty-equalBorderColor:#797979;
+qproperty-downBorderColor:#127f3a;
+}
+
+/***************************end***************************/
+
+
+/***********************沪深综合左侧页面部分*****************/
+
+HszhLeftTopWnd, HszhLeftCenterWnd, HszhLeftBottomWnd
+{
+border-image:url(:/skin/default/img/suoleChart/cornerline1BG.png);
+}
+
+
+
+HszhLeftTopWnd QWidget#title
+{
+background:#222222;
+margin-right:2px;
+}
+
+
+HszhLeftTopWnd CSubTab#root QPushButton
+{
+width:82px;
+height:20px;
+border:none;
+background:#2f2f2f;
+color:#adadad;
+}
+
+HszhLeftTopWnd CSubTab#root QPushButton:checked
+{
+background:#4e4e4e;
+color:#ffffff;
+}
+
+
+HszhLeftTopWnd QPushButton#left
+{
+width:5px;
+height:9px;
+border-image:url(:/skin/default/img/suoleChart/left.png);
+}
+
+HszhLeftTopWnd QPushButton#left:hover
+{
+border-image:url(:/skin/default/img/suoleChart/left_hover.png);
+}
+
+HszhLeftTopWnd QPushButton#right
+{
+width:5px;
+height:9px;
+border-image:url(:/skin/default/img/suoleChart/right.png);
+}
+
+HszhLeftTopWnd QPushButton#right:hover
+{
+border-image:url(:/skin/default/img/suoleChart/right_hover.png);
+}
+
+HszhMinWidget QWidget#mintitle
+{
+max-height:24px;
+min-height:24px;
+background:#222222;
+border-top:1px solid #2f2f2f;
+border-bottom:1px solid #2f2f2f;
+}
+
+HszhMinWidget#leftmin QWidget#mintitle
+{
+border-right:1px solid #2f2f2f;
+}
+
+HszhMinWidget#leftmin MinCanvas
+{
+border-right:1px solid #2f2f2f;
+}
+
+HszhMinWidget QLabel
+{
+color:#ffffff;
+}
+
+HszhLeftCenterWnd QWidget#title
+{
+max-height:22px;
+min-height:22px;
+background:#2f2f2f;
+margin:2px;
+margin-bottom:1px;
+}
+
+HszhLeftCenterWnd QWidget#title QLabel
+{
+color:#ffffff;
+}
+
+HszhLeftCenterWnd QWidget#title QPushButton
+{
+width:12px;
+height:12px;
+border-image:url(:/skin/default/img/suoleChart/more.png);
+}
+
+HszhLeftCenterWnd QWidget#title QPushButton:hover
+{
+border-image:url(:/skin/default/img/suoleChart/more_hover.png);
+}
+
+LzPaltePanel
+{
+border-top:1px solid #222222;
+}
+
+LzPaltePanel#first,LzPaltePanel#fifth
+{
+margin-left:1px;
+}
+
+LzPaltePanel#forth,LzPaltePanel#eighth
+{
+margin-right:1px;
+}
+
+LzPaltePanel#first,LzPaltePanel#second,
+LzPaltePanel#third,LzPaltePanel#fifth,
+LzPaltePanel#sixth,LzPaltePanel#seventh
+{
+border-right:1px solid #222222;
+}
+
+LzPaltePanel QLabel#name
+{
+font:bold 16px "SimSun";
+color:#cad4dc;
+}
+
+LzPaltePanel QLabel#rate
+{
+font:bold 13px "Arial";
+}
+
+LzPaltePanel QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+LzPaltePanel QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+LzPaltePanel QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+LzPaltePanel QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+
+HszhLeftBottomWnd
+{
+background:#191919;
+}
+
+
+HszhLeftBottomWnd QWidget#title
+{
+max-height:22px;
+min-height:22px;
+background:#2f2f2f;
+margin:2px;
+margin-bottom:1px;
+}
+
+HszhLeftBottomWnd QWidget#title QLabel
+{
+color:#ffffff;
+}
+
+HszhLeftBottomWnd QWidget#title QPushButton
+{
+width:12px;
+height:12px;
+border-image:url(:/skin/default/img/suoleChart/more.png);
+}
+
+HszhLeftBottomWnd QWidget#title QPushButton:hover
+{
+border-image:url(:/skin/default/img/suoleChart/more_hover.png);
+}
+
+
+FundFlowPanel
+{
+background:#191919;
+border-top:1px solid #2f2f2f;
+margin-bottom:1px;
+}
+
+FundFlowPanel#first
+{
+margin-left:1px;
+}
+
+FundFlowPanel#forth
+{
+margin-right:1px;
+}
+
+FundFlowPanel#first,FundFlowPanel#second,FundFlowPanel#third
+{
+border-right:1px solid #2f2f2f;
+}
+
+
+FundFlowPanel QWidget#content
+{
+background:#222222;
+}
+
+FundFlowPanel QLabel#name
+{
+font: bold 16px "SimSun";
+color:#cad4dc;
+}
+
+FundFlowPanel QLabel#code
+{
+font: bold 13px "Arial";
+color:#cad4dc;
+}
+
+FundFlowPanel QLabel#rate
+{
+font:bold 13px "Arial";
+}
+
+FundFlowPanel QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+FundFlowPanel QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+FundFlowPanel QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+FundFlowPanel QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+FundFlowPanel QLabel#flow
+{
+font:bold 14px "SimSun";
+color:#e62727;
+}
+
+FundFlowPanel QLabel#amount
+{
+font:bold 13px "Arial";
+}
+
+FundFlowPanel QLabel#amount[direct="0"]
+{
+color:#e62727;
+}
+
+FundFlowPanel QLabel#amount[direct="1"]
+{
+color:#0aaa38;
+}
+
+FundFlowPanel QLabel#amount[direct="2"]
+{
+color:#cad4dc;
+}
+
+FundFlowPanel QLabel#amount[direct="3"]{
+color:#cad4dc;
+}
+
+
+
+/***************************end***************************/
+
+/***************************右侧涨跌排行样式***************************/
+HszhRankPage
+{
+background:#2f2f2f;
+}
+
+HszhRankPage CSubTab QPushButton
+{
+background:#222222;
+}

@@ -1,0 +1,739 @@
+﻿/********************************************************************
+created: 2018/04/16
+author: dk.zhang
+purpose:控件统一的qss文件,样式代码的位置根据字母顺序排
+*********************************************************************/
+
+/* a ---------------------------------------------------------------------*/
+
+/* c ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:CSubTab
+description:导航栏中一栏的基类
+*******************************************************************/
+CSubTab {
+background-color:#222222;
+}
+
+CSubTab  QPushButton{
+background-color:#2f2f2f;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+
+padding-top:3px;
+padding-bottom:3px;
+padding-left:12px;
+padding-right:12px;
+
+border-style:solid;
+}
+
+CSubTab QPushButton:checked
+{
+background-color:#4e4e4e;
+color:#ffffff;
+}
+
+/* f ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:FreezeTableView
+description:表格窗口样式........
+*******************************************************************/
+FreezeTableView QTableView
+{
+border:none;
+}
+
+
+/* h ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:HZTreeView
+description:树形表格窗口样式........
+*******************************************************************/
+HZTreeView QTreeView, HZTreeView{
+border: 1px solid rgb(50, 50, 50);
+background-color: #101c3f;
+alternate-background-color: yellow;
+show-decoration-selected: 1;
+}
+
+HZTreeView QTreeView::item,HZTreeView::item {
+height: 25px;
+color: white;
+border: 0.5px solid #162754;
+background-color: transparent;
+}
+
+/****************************************************************
+name_id:HZLine
+description:分割线
+*******************************************************************/
+HZLine
+{
+color:#1c2543;
+}
+
+
+/* i ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:IntroductionButton
+description: 详细介绍按钮
+*******************************************************************/
+IntroductionButton
+{
+background:#2f2f2f;
+color:#cad4dc;
+}
+
+IntroductionButton QLabel
+{
+color:#cad4dc;
+}
+
+IntroductionButton  QPushButton
+{
+width:12px;
+border-image:url(:/skin/default/img/0controls/introduction/introduction.png) 0 0 0 0 repeat;
+}
+
+IntroductionButton  QPushButton:hover
+{
+border-image:url(:/skin/default/img/0controls/introduction/introduction_hover.png) 0 0 0 0 repeat;
+}
+
+/* p ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:PopupWindow
+description:弹出窗口，样式....
+*******************************************************************/
+PopupWindow
+{
+background-color:#2E3640;
+border:2px solid #000000;
+}
+
+PopupWindow QWidget#statuswidget
+{
+background-color:#FFF5EE;
+border-top:1px solid #0D0E14;
+}
+
+PopupWindow QWidget#contentwidget
+{
+qproperty-minimumSize: 100px 24px;
+background-color:#FFE4C4;
+border-top:1px solid #0D0E14;
+}
+
+PopupWindow QWidget#titleWnd
+{
+qproperty-minimumSize: 100px 24px;
+background-color:#FF0000;
+border-top:1px solid #0D0E14;
+}
+
+PopupWindow QPushButton#surebtn
+{
+qproperty-minimumSize: 60px 24px;
+qproperty-maximumSize: 60px 24px;
+border-width:0px;
+background-color:transparent;
+border-image:url(:/skin/default/img/rightposition/ok_btn.png) 0 0 0 0 repeat;
+}
+
+PopupWindow QPushButton#surebtn:hover
+{
+border-image:url(:/skin/default/img/rightposition/ok_btn.png) 0 0 0 60 repeat;
+}
+
+PopupWindow QPushButton#surebtn:pressed
+{
+border-image:url(:/skin/default/img/rightposition/ok_btn.png) 0 0 0 120 repeat;
+}
+
+PopupWindow QPushButton#surebtn:disabled
+{
+border-image:url(:/skin/default/img/rightposition/ok_btn.png) 0 0 0 180 repeat;
+}
+
+/* s ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:WindowControlBox
+description:窗口缩放，关闭按钮控件
+*******************************************************************/
+SearchEdit  QPushButton#resetBtn{
+max-height :11px;
+max-width:12px;
+color:#a0a0a0;
+background-color :transparent;
+/*border-image: url(:/skin/default/img/0controls/searchedit/icon_reset.png);*/
+}
+SearchEdit  QPushButton#resetBtn:hover{
+max-height :11px;
+max-width:12px;
+color:#a0a0a0;
+background-color :transparent;
+/*border-image: url(:/skin/default/img/0controls/searchedit/back_hover.png);*/
+}
+
+SearchEdit QLineEdit#searchEdit
+{
+font:normal normal 12px "SimSun";
+border-radius: 3px;
+color:#adadad;
+background-color :#2f2f2f;
+max-height :25px;
+min-height :25px;
+padding-top: 0px;
+padding-left: 8px;
+}
+
+SearchEdit QPushButton#searchBtn
+{
+max-height :14px;
+min-height :14px;
+max-width:14px;
+min-width:14px;
+border-image: url(:/skin/default/img/0controls/searchedit/icon_search.png);
+}
+SearchEdit QPushButton#searchBtn:hover
+{
+max-height :14px;
+min-height :14px;
+max-width:14px;
+min-width:14px;
+border-image: url(:/skin/default/img/0controls/searchedit/search_visited.png);
+}
+
+SuolueWidget
+{
+border-image:url(:/skin/default/img/suoleChart/cornerline1BG.png);
+}
+
+SuolueWidget
+{
+height:23px;
+background-color:#222222;
+border-bottom:1px solid #2E2E2E;
+}
+
+/****************************************************************
+name_id:SideBar
+description:侧边栏
+*******************************************************************/
+/*
+SideBar QToolButton
+{
+background-color:#1c2543;
+margin:0px;
+}
+*/
+
+/* t ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:TitleBar
+description:标题栏
+*******************************************************************/
+TitleBar QLabel#textLabel
+{
+font-family: "SimSun";
+font-size: 12px;
+font-weight: 400;
+color: #FEFEFE;
+}
+
+
+/* w ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:WindowControlBox
+description:窗口缩放，关闭按钮控件
+*******************************************************************/
+WindowControlBox {
+background-color: transparent;
+}
+
+WindowControlBox>QPushButton
+{
+width: 30px;
+height: 30px;
+border-width: 0px;
+}
+
+WindowControlBox QPushButton#minBtn{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_mini.png) 0 0 0 0 repeat;
+}
+WindowControlBox QPushButton#minBtn:hover{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_mini.png) 0 0 0 30 repeat;
+}
+WindowControlBox QPushButton#minBtn:pressed{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_mini.png) 0 0 0 60 repeat;
+}
+WindowControlBox QPushButton#minBtn:disabled{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_mini.png) 0 0 0 90 repeat;
+}
+
+WindowControlBox QPushButton#expandBtn
+{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_expand.png) 0 0 0 0 repeat;
+}
+WindowControlBox QPushButton#expandBtn:hover
+{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_expand.png) 0 0 0 30 repeat;
+}
+WindowControlBox QPushButton#expandBtn:pressed
+{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_expand.png) 0 0 0 60 repeat;
+}
+WindowControlBox QPushButton#expandBtn:disabled
+{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_expand.png) 0 0 0 90 repeat;
+}
+
+
+WindowControlBox QPushButton#narrowBtn{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_narrow.png)0 0 0 0 repeat;
+}
+WindowControlBox QPushButton#narrowBtn:hover{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_narrow.png) 0 0 0 30 repeat;
+}
+WindowControlBox QPushButton#narrowBtn:pressed{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_narrow.png) 0 0 0 60 repeat;
+}
+WindowControlBox QPushButton#narrowBtn:disabled {
+border-image: url(:/skin/default/img/windowcontrolbox/icon_narrow.png) 0 0 0 90 repeat;
+}
+
+WindowControlBox QPushButton#closeBtn{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_close.png) 0 0 0 0 repeat;
+}
+WindowControlBox QPushButton#closeBtn::hover{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_close.png) 0 0 0 30 repeat;
+}
+WindowControlBox QPushButton#closeBtn::pressed{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_close.png) 0 0 0 60 repeat;
+}
+WindowControlBox QPushButton#closeBtn::disabled{
+border-image: url(:/skin/default/img/windowcontrolbox/icon_close.png) 0 0 0 90 repeat;
+}
+
+
+
+/* x-------------------------------------------------------*/
+
+
+/* M ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:msgbox
+description:弹框消息
+*******************************************************************/
+PopupDialog QWidget#wintitle
+{
+background-color: #2f2f2f;
+}
+
+MsgView QPushButton#info
+{
+image:url(:/skin/default/img/msgbox/info.png);
+
+background: transparent;
+
+border:none;
+}
+
+MsgView QPushButton#question
+{
+image:url(:/skin/default/img/msgbox/question.png);
+
+background: transparent;
+
+border:none;
+}
+
+MsgView QPushButton#warning
+{
+image:url(:/skin/default/img/msgbox/close.png);
+
+background: transparent;
+
+border:none;
+}
+
+MsgView QPushButton#error
+{
+image:url(:/skin/default/img/msgbox/error.png);
+
+background: transparent;
+
+border:none;
+}
+
+
+MsgView QPushButton{border:1px groove gray;border-radius:3px;border-color: rgb(139,159,185); width: 85; height:30}
+MsgView QPushButton:hover{background-color: rgb(119,146,183);}
+MsgView QPushButton:pressed{background-color: rgb(139,159,185);}
+MsgView QPushButton:default {border:  2px  ridge ;  border-color:rgb(60, 127, 177);}
+/* x-------------------------------------------------------*/
+/*参数设置对话框                                             */
+/* x-------------------------------------------------------*/
+
+PopupDialog> QWidget#mainWidget
+{
+background:#191919;
+border:1px solid #2e2e2e;
+}
+
+PopupDialog> QWidget#wintitle QLabel
+{
+color:#ffffff;
+font-size:12px;
+font-family:"SimSun";
+font-weight:bold;
+}
+
+PopupDialog> QWidget#mainWidget QWidget#topwidget QLabel
+{
+color:#adadad;
+font-size:12px;
+font-family:"SimSun";
+}
+
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget
+{
+background:#2f2f2f;
+border:1px solid #090909;
+}
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget QSpinBox
+{
+border:1px solid #353535;
+background:#161616;
+color:#ffffff;
+font-size:12px;
+font-family: "SimSun";
+}
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget QSpinBox::up-button
+{
+background:#202020;
+}
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget QSpinBox::down-button
+{
+background:#202020;
+
+}
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget QSpinBox::up-arrow
+{
+image:url(:/skin/default/img/0controls/parasetting/up.png);
+
+}
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget QSpinBox::down-arrow
+{
+image:url(:/skin/default/img/0controls/parasetting/down.png);
+padding-bottom:2px;
+}
+
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget QSpinBox::up-arrow:hover
+{
+image:url(:/skin/default/img/0controls/parasetting/up-hover.png);
+}
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget QSpinBox::down-arrow:hover
+{
+image:url(:/skin/default/img/0controls/parasetting/down-hover.png);
+}
+
+
+
+PopupDialog QWidget#mainWidget QWidget#bottomwidget QPushButton#resetbtn
+{
+border:none;
+border-radius:2px;
+background:#2f2f2f;
+color:#adadad;
+font-size:12px;
+font-family:"SimSun";
+
+width: 85; height:30
+}
+
+PopupDialog QWidget#mainWidget QWidget#bottomwidget QPushButton#savebtn
+{
+border:none;
+border-radius:2px;
+background:#3182cf;
+color:#ffffff;
+font-size:12px;
+font-family:"SimSun";
+width: 60; height:30
+}
+
+
+PopupDialog QWidget#mainWidget QWidget#bottomwidget QPushButton#resetbtn:hover
+{
+background:#153864;
+}
+
+PopupDialog QWidget#mainWidget QWidget#bottomwidget QPushButton#savebtn:hover
+{
+background:#153864;
+}
+
+PopupDialog QWidget#mainWidget QWidget#bottomwidget QPushButton#resetbtn:pressed
+{
+background-color:#070b13;
+}
+
+PopupDialog QWidget#mainWidget QWidget#bottomwidget QPushButton#savebtn:pressed
+{
+background-color:#070b13;
+}
+
+
+PopupDialog QWidget#mainWidget QWidget#centralwidget QLabel
+{
+color:#adadad;
+font-size:12px;
+font-family:"SimSun";
+}
+
+
+PopupDialog QWidget#colorwidget QLabel
+{
+min-width:80px;
+max-width:80px;
+min-height:26px;
+max-height:26px;
+border:2px solid #353535;
+border-right:none;
+background:#ff8080;
+}
+
+PopupDialog QWidget#colorwidget QPushButton
+{
+height:26px;
+width:15px;
+border:2px solid #353535;
+border-left:none;
+image:url(:/skin/default/img/0controls/parasetting/down.png);
+background:#202020;
+}
+
+
+PenStyleToolButton#styletoolBtn
+{
+min-width:85px;
+max-width:85px;
+min-height:26px;
+max-height:26px;
+border:2px solid #353535;
+background:#161616;
+}
+
+QToolButton#menubtn1,QToolButton#menubtn2,QToolButton#menubtn3
+{
+background:#161616;
+border:none;
+}
+
+QToolButton#menubtn1:hover,QToolButton#menubtn2:hover,QToolButton#menubtn3:hover
+{
+background:#1c4675;
+}
+
+
+
+PopupDialog QWidget#centralwidget PenStyleToolButton::menu-arrow
+{
+image:url(:/skin/default/img/0controls/parasetting/down.png);
+}
+
+PopupDialog QWidget#centralwidget PenStyleToolButton::menu-arrow:hover
+{
+image:url(:/skin/default/img/0controls/parasetting/down-hover.png);
+}
+
+PopupDialog QWidget#centralwidget PenStyleToolButton::menu-button
+{
+background:#202020;
+border:2px solid #353535;
+border-left:1px;
+border-right:1px;
+}
+
+/*历史K线样式*/
+MinLineHisWidget QWidget#centerwidget
+{
+background:rgb(12, 18, 12);
+}
+
+
+MinLineHisWidget  TitleBar#minHistitle
+{
+qproperty-minimumSize: 100px 24px;
+background-color:rgb(47,47,47);
+}
+
+
+/* S ---------------------------------------------------------------------*/
+/****************************************************************
+name_id:ScrollWidget
+description:可滚动窗口
+*******************************************************************/
+ScrollWidget QScrollArea
+{
+border:none;
+background:black;
+}
+
+ScrollWidget QScrollArea
+{
+background:black;
+}
+
+/****************scrollbar   vertical**************************/
+ScrollWidget  QScrollBar:vertical
+{
+width:8px;
+background-color:#0e0e0e;
+margin-top:14px;
+margin-bottom:14px;
+}
+
+ScrollWidget  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:0px;
+min-height:  20px;
+margin-left:0px;
+margin-right:1px;
+}
+
+ScrollWidget  QScrollBar::handle:vertical:hover
+{
+background: #505050;
+}
+
+ScrollWidget  QScrollBar::add-page:vertical
+{
+background-color:#0e0e0e;
+}
+
+ScrollWidget   QScrollBar::sub-page:vertical
+{
+background-color:#0e0e0e;
+}
+
+ScrollWidget   QScrollBar::sub-line:vertical
+{
+background-color:#0e0e0e;
+height: 14px;
+subcontrol-position: top;
+subcontrol-origin:margin;
+}
+
+ScrollWidget   QScrollBar::add-line:vertical
+{
+background-color:#0e0e0e;
+height: 14px;
+subcontrol-position: bottom;
+subcontrol-origin:margin;
+}
+
+ScrollWidget   QScrollBar::up-arrow:vertical
+{
+image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+ScrollWidget   QScrollBar::down-arrow:vertical
+{
+image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+
+ScrollWidget QScrollBar:horizontal
+{
+    background:#0e0e0e;
+    height:16px;
+    margin:0px,0px,0px,0px;
+    padding-top:4px;
+    padding-bottom:3px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+ScrollWidget QScrollBar::handle:horizontal
+{
+    min-width:80px;
+    height:10px;
+    background:#2e2e2e;
+    border-radius:3px;
+}
+
+ScrollWidget QScrollBar::handle:horizontal:hover
+{
+    background:#505050;
+    border-radius:3px;
+}
+
+ScrollWidget QScrollBar::add-line:horizontal
+{
+    image:url(:/skin/default/img/tableview/scrollbar_right.png);
+}
+
+ScrollWidget QScrollBar::sub-line:horizontal
+{
+    image:url(:/skin/default/img/tableview/scrollbar_left.png);
+}
+
+ScrollWidget QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+    background: none;
+}
+
+/************ViewTipsPanel***************************/
+
+QPushButton#dataEmptyBt
+{
+    background-color:transparent;
+    image:url(:/skin/default/img/infopage/NEWS01.png);
+}
+
+QPushButton#dataEmptyBt:hover
+{
+   image:url(:/skin/default/img/infopage/NEWS01.png);
+}
+
+QLabel#dataEmptyLable
+{
+ background-color:transparent;
+ color:#858585;
+ font:normal 14px "SimSun";
+}
+
+QPushButton#dataErrBt
+{
+    background-color:transparent;
+    border-image:url(:/skin/default/img/infopage/NEWS02.png);
+}
+
+QPushButton#dataErrBt:hover
+{
+    border-image:url(:/skin/default/img/infopage/NEWS02.png);
+}
+
+QLabel#dataErrLable
+{
+ background-color:transparent;
+ color:#858585;
+ font:normal 14px "SimSun";
+}
+/******************************************************/
+
+
+

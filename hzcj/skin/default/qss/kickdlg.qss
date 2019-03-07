@@ -1,0 +1,34 @@
+﻿HZReloginDlg
+{
+    color:#ffffff;
+    background:#1d1d1d;
+}
+
+KickTitle
+{
+    background:#adadad;
+}
+
+HZReloginDlg QLabel
+{
+    font-family:"SimSun";
+    font-size:14px;
+    color:#b7bec6;
+}
+
+HZReloginDlg QPushButton
+{
+    border:1px solid transparent;
+    color:#adadad;
+    background:#2f2f2f;
+}
+
+HZReloginDlg QPushButton:hover
+{
+    border:1px solid transparent;
+    color:#feffff;
+    background:#3183cf;
+}
+
+
+

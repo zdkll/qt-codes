@@ -1,0 +1,40 @@
+﻿DrawMaster QScrollBar:horizontal
+{
+    background:#0e0e0e;
+    height:16px;
+    margin:0px,0px,0px,0px;
+    padding-top:4px;
+    padding-bottom:3px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+DrawMaster QScrollBar::handle:horizontal
+{
+    min-width:80px;
+    height:10px;
+    background:#2e2e2e;
+    border-radius:3px;
+}
+
+DrawMaster QScrollBar::handle:horizontal:hover
+{
+    background:#2e2e2e;
+    border-radius:3px;
+}
+
+DrawMaster QScrollBar::add-line:horizontal
+{
+    image:url(:/skin/default/img/tableview/scrollbar_right.png);
+}
+
+DrawMaster QScrollBar::sub-line:horizontal
+{
+    image:url(:/skin/default/img/tableview/scrollbar_left.png);
+}
+
+DrawMaster QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+    background: none;
+}
+

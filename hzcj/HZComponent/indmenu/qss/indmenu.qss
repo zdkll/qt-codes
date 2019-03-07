@@ -1,0 +1,18 @@
+﻿#IndItem
+{
+    qproperty-selClr:#449bb2;
+    qproperty-norClr:#adadad;
+    qproperty-borderClr:#0f1317;
+}
+
+#IndItem
+{
+    border:1px solid #0f1317;
+    background:#333333;
+}
+
+#IndMenuMaster
+{
+    border:1px solid #0f1317;
+    background:#333333;
+}

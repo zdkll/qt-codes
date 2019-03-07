@@ -1,0 +1,40 @@
+﻿#HZAboutDlg
+{
+    background:#17181a;
+}
+
+#HZAboutDlg QLabel
+{
+    font-family:"微软雅黑";
+    /*font:bold 15px "ArialMT";*/
+    color:#bdbcbc;
+    background:transparent;
+}
+
+#frameTitle
+{
+    background:#222426;
+    border-bottom:1px solid #2e3033;
+}
+
+#lab_max_font
+{
+    font: 75 35px "微软雅黑";
+    color:white;
+}
+
+#btn_cls
+{
+    border-image: url(:/skin/default/img/about/close.png);
+}
+
+#btn_cls:hover
+{
+    border-image: url(:/skin/default/img/about/close_hover.png);
+}
+
+#btn_ico
+{
+
+}
+

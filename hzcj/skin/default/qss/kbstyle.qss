@@ -1,0 +1,67 @@
+﻿#HZKBControl
+{
+    border:1px solid #1b4472;
+    background:#222222;;
+}
+
+#HZKBControl QTableView
+{
+    font: 12px "Arial";
+    border: 0px;
+    outline: 0px;
+    show-decoration-selected: 0; /* make the selection span the entire width of the view */
+    background:transparent;
+    selection-background-color:#1c4675;
+    selection-color:#ffffff;
+}
+
+#HZKBControl QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;   /*上预留位置*/
+    padding-bottom:12px;    /*下预留位置*/
+}
+
+/*滚动条中滑块的样式*/
+#HZKBControl  QScrollBar::handle:vertical
+{
+    background-color:#2e2e2e;
+    border-radius:3px;
+    margin-left: 3px;
+    min-height: 20px;
+    margin-right:3px;
+}
+#HZKBControl QScrollBar::add-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: bottom;
+    subcontrol-origin:margin;
+}
+
+#HZKBControl QScrollBar::sub-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: top;
+    subcontrol-origin:margin;
+}
+
+#HZKBControl QScrollBar::up-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+#HZKBControl QScrollBar::down-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+/*当滚动条滚动的时候，上面的部分和下面的部分*/
+#HZKBControl QScrollBar::add-page:vertical,#HZKBControl QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}

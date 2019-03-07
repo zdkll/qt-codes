@@ -1,0 +1,185 @@
+﻿/********************OptionDynaView*******************************/
+OptionDynaView QTableView
+{
+background-color:#252b2e;
+selection-background-color:#2b3236;
+border:none;
+gridline-color:#2b3236;
+}
+
+
+/****************自选股*******************************/
+ZXDynaView QTableView
+{
+gridline-color:#2b3236;
+background-color:#252b2e;
+}
+/****************自选股*******************************/
+
+
+OptionDynaView QTableView QHeaderView
+{
+background-color:#1b1f21;
+border:none;
+height:24px;
+}
+
+OptionDynaView QTableView QHeaderView::section
+{
+background-color:#333a40;
+border:none;
+margin-right:1px;
+
+padding-top:3px;
+padding-bottom:2px;
+
+padding-right:10px;
+
+margin-bottom:1px;
+
+font:normal 12px "SimSun" ;
+color: #cad4dc
+}
+
+OptionDynaView QTableView QHeaderView::up-arrow,QHeaderView::down-arrow
+{
+subcontrol-position:center right;
+margin-right:4px;
+width:6px;
+height:6px;
+}
+
+OptionDynaView QTableView QHeaderView::up-arrow
+{
+image:url(:/skin/default/img/tableview/up.png);
+}
+
+OptionDynaView QTableView QHeaderView::down-arrow
+{
+image:url(:/skin/default/img/tableview/down.png);
+}
+
+
+/***scrollbar   horizontal***/
+OptionDynaView  QScrollBar:horizontal
+{
+height:14px;
+background-color:#0e0e0e;
+margin-left:14px;
+margin-right:14px;
+}
+
+OptionDynaView   QScrollBar::handle:horizontal
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-top:3px;
+margin-bottom:3px;
+}
+
+OptionDynaView   QScrollBar::handle:horizontal:hover {
+background: #505050;
+}
+
+OptionDynaView   QScrollBar::add-page:horizontal
+{
+background-color:#0e0e0e;
+}
+
+OptionDynaView   QScrollBar::sub-page:horizontal
+{
+background-color:#0e0e0e;
+}
+
+OptionDynaView   QScrollBar::sub-line:horizontal
+{
+background-color:#0e0e0e;
+width: 14px;
+subcontrol-position: left;
+subcontrol-origin:margin;
+}
+
+OptionDynaView   QScrollBar::add-line:horizontal
+{
+background-color:#0e0e0e;
+width: 14px;
+subcontrol-position: right;
+subcontrol-origin:margin;
+}
+
+OptionDynaView   QScrollBar::right-arrow:horizontal
+{
+image:url(:/skin/default/img/tableview/scrollbar_right.png);
+}
+
+OptionDynaView   QScrollBar::left-arrow:horizontal
+{
+image:url(:/skin/default/img/tableview/scrollbar_left.png);
+}
+
+
+
+/****************scrollbar   vertical**************************/
+OptionDynaView QTableView QScrollBar:vertical
+{
+width:14px;
+background-color:#0e0e0e;
+margin-top:14px;
+margin-bottom:14px;
+}
+
+OptionDynaView QTableView  QScrollBar::handle:vertical
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-left:3px;
+margin-right:3px;
+}
+
+OptionDynaView QTableView  QScrollBar::handle:vertical:hover {
+background: #505050;
+}
+
+OptionDynaView QTableView  QScrollBar::add-page:vertical
+{
+background-color:#0e0e0e;
+}
+
+OptionDynaView QTableView  QScrollBar::sub-page:vertical
+{
+background-color:#0e0e0e;
+}
+
+
+/**********添加自选股****************/
+AddZXStockView
+{
+background:transparent
+}
+
+AddZXStockView[ZXViewType = "0"] QPushButton
+{
+ border-image:url(:/skin/default/img/tableview/addstockbtn_02.png);
+}
+
+AddZXStockView[ZXViewType = "0"] QPushButton:hover
+{
+ border-image:url(:/skin/default/img/tableview/addstockbtn_hover_02.png);
+}
+
+AddZXStockView[ZXViewType = "1"] QPushButton
+{
+ border-image:url(:/skin/default/img/tableview/addstockbtn_01.png);
+}
+
+AddZXStockView[ZXViewType = "1"] QPushButton:hover
+{
+ border-image:url(:/skin/default/img/tableview/addstockbtn_hover_01.png);
+}
+
+AddZXStockView QLabel
+{
+ color:#797979;
+ font:normal 14px "SimSun";
+}
+

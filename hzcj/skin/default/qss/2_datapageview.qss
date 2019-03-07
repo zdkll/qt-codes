@@ -1,0 +1,123 @@
+﻿DataPageBaseView
+{
+qproperty-riseColor:#e62727;
+qproperty-plainColor:#cad4dc;
+qproperty-fallColor:#0aaa38;
+
+qproperty-normalColor:#adadad; /*cad4dc*/
+
+}
+/*新股日历**/
+XgrlTableView
+{
+qproperty-filePixmap:url(:/skin/default/img/tableview/book.png);
+qproperty-fileHoverPixmap:url(:/skin/default/img/tableview/book_hover.png);
+qproperty-ygPixmap:url(:/skin/default/img/tableview/yugu.png);
+}
+
+/*******************沪深个股 **********************/
+DataPageBaseView QTableView
+{
+background-color:#191919;
+selection-background-color:#1c4676;
+border:none;
+gridline-color:#232323
+}
+
+DataPageBaseView QTableView QHeaderView
+{
+background-color:#191919;
+border:none;
+font:normal 12px "SimSun" ;
+color: #adadad;
+}
+
+DataPageBaseView QTableView QHeaderView::section
+{
+background-color:#333a40;
+border:none;
+margin-right:1px;
+height:22px;
+}
+
+DataPageBaseView QTableView QHeaderView::section:checked
+{
+font:normal 12px "SimSun" ;
+}
+
+DataPageBaseView QTableView QHeaderView::up-arrow,QHeaderView::down-arrow
+{
+subcontrol-position:center right;
+margin-right:1px;
+width:6px;
+height:6px;
+}
+
+DataPageBaseView QTableView QHeaderView::up-arrow
+{
+image:url(:/skin/default/img/tableview/up.png);
+}
+
+DataPageBaseView QTableView QHeaderView::down-arrow
+{
+image:url(:/skin/default/img/tableview/down.png);
+}
+
+
+/***scrollbar   horizontal***/
+DataPageBaseView QScrollBar:horizontal
+{
+height:14px;
+background-color:#0e0e0e;
+margin-left:14px;
+margin-right:14px;
+}
+
+DataPageBaseView  QScrollBar::handle:horizontal
+{
+background-color:#2e2e2e;
+border-radius:3px;
+margin-top:3px;
+margin-bottom:3px;
+min-width:50px;
+}
+
+DataPageBaseView  QScrollBar::handle:horizontal:hover {
+background: #505050;
+}
+
+DataPageBaseView  QScrollBar::add-page:horizontal
+{
+background-color:#0e0e0e;
+}
+
+DataPageBaseView  QScrollBar::sub-page:horizontal
+{
+background-color:#0e0e0e;
+}
+
+DataPageBaseView  QScrollBar::sub-line:horizontal
+{
+background-color:#0e0e0e;
+width: 14px;
+subcontrol-position: left;
+subcontrol-origin:margin;
+}
+
+DataPageBaseView  QScrollBar::add-line:horizontal
+{
+background-color:#0e0e0e;
+width: 14px;
+subcontrol-position: right;
+subcontrol-origin:margin;
+}
+
+DataPageBaseView  QScrollBar::right-arrow:horizontal
+{
+image:url(:/skin/default/img/tableview/scrollbar_right.png);
+}
+
+DataPageBaseView  QScrollBar::left-arrow:horizontal
+{
+image:url(:/skin/default/img/tableview/scrollbar_left.png);
+}

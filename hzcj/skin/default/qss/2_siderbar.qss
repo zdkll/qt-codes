@@ -1,0 +1,78 @@
+﻿/****************************************************************
+name_id:MainSideBar
+description:主界面的左侧边栏
+*******************************************************************/
+
+MainSideBar QToolButton
+{
+width:   56px;
+border:  none;
+background-color:transparent;
+color:#adadad;
+font-size: 13px;
+font-family:"Microsoft YaHei";
+qproperty-iconSize: 28px  20px;
+padding-top: 16px;
+padding-bottom:16px;
+}
+
+
+MainSideBar QToolButton:hover
+{
+background-color:#414141;
+}
+
+
+MainSideBar QToolButton:checked
+{
+background-color:#191919;
+color:#ffffff;
+}
+
+
+MainSideBar QPushButton#logo{
+max-width:46px;
+min-width:46px;
+max-height:46px;
+min-height:46px;
+border-image:url(:/skin/default/img/1mainwindow/mainsidebar/icon_logo.png);
+}
+
+
+
+MainSideBar QToolButton#home{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/Home.png);
+}
+
+MainSideBar QToolButton#home:checked{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/MENUquanjingtu_visited.png);
+}
+
+
+MainSideBar QToolButton#selfstock{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/MENUzixuangu_visited.png);
+}
+
+MainSideBar QToolButton#hsstock{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/MENUhushengegu_visited.png);
+}
+
+MainSideBar QToolButton#Quotes{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/Quotes.png);
+}
+
+MainSideBar QToolButton#hsbk{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/MENUhushenbankuai_visited.png);
+}
+
+MainSideBar QToolButton#hszx{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/MENUzixunzhongxin_visited.png);
+}
+
+MainSideBar QToolButton#Data{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/Data.png);
+}
+
+MainSideBar QToolButton#strategy{
+qproperty-icon:url(:/skin/default/img/1mainwindow/mainsidebar/strategy.png);
+}

@@ -1,0 +1,150 @@
+﻿/*******
+**登录页面
+**/
+
+LogInDialog
+{
+background:#EEEEEE;
+}
+
+LogInDialog QWidget#topWidget
+{
+background-image:url(:/skin/default/img/login/bg.png);
+}
+
+LogInDialog QTabWidget::pane
+{
+border:none
+}
+LogInDialog QTabWidget QTabBar::tab
+{
+background:  white;
+border: 1px solid #C4C4C3;
+border-bottom-color: #C2C7CB; /* same as the pane color */
+border-radius: 0px;
+min-width: 8ex;
+padding: 3px  43px ;
+
+}
+
+LogInDialog QTabWidget QTabBar::tab:selected
+{
+
+background:  white;
+}
+LogInDialog QTabWidget QTabBar::tab:!selected
+{
+background:  #EFEFEF;
+}
+
+
+LogInDialog QLineEdit,QComboBox
+{
+font:normal 14px  "微软雅黑";
+color:#999999;
+}
+LogInDialog QLineEdit
+{
+border-radius:2px;
+}
+
+
+
+LogInDialog QPushButton#regBtn,QPushButton#fgtpwdBtn,QPushButton#guestLogInBtn
+{
+background-color:transparent;
+font:normal 12px  "微软雅黑";
+color:#0069cc;
+margin:0px;
+padding-left:0px;
+}
+
+LogInDialog QPushButton#regBtn:hover,QPushButton#fgtpwdBtn:hover,QPushButton#guestLogInBtn:hover
+{
+color:#00ccff;
+}
+
+LogInDialog QPushButton#regBtn:pressed,QPushButton#fgtpwdBtn:pressed,QPushButton#guestLogInBtn:pressed
+{
+color:#003399;
+}
+
+LogInDialog QPushButton#getVerNumBtn
+{
+border: 1px solid #8f8f91;
+padding:4px 2px;
+border-radius: 0px;
+background-color:  white;
+}
+
+
+LogInDialog QCheckBox::indicator:unchecked
+{
+image: url(:/skin/default/img/login/uncheck.png);
+}
+
+LogInDialog QCheckBox::indicator:checked
+{
+image: url(:/skin/default/img/login/checked.png);
+}
+
+LogInDialog QCheckBox::indicator:unchecked:hover
+{
+image: url(:/skin/default/img/login/uncheck_hover.png);
+}
+
+LogInDialog QLabel#infoLabel
+{
+font:normal 12px  "微软雅黑";
+color:#505050;
+}
+
+LogInDialog QPushButton#loginBtn
+{
+font:bold 14px  "微软雅黑";
+color:#ffffff;
+
+background:#1874CD;
+padding-top:7px;
+padding-bottom:7px;
+border-radius:4px;
+}
+
+LogInDialog QPushButton#loginBtn:hover
+{
+background:#63B8FF
+}
+
+LogInDialog QPushButton#loginBtn:pressed
+{
+background:#1874CD
+}
+
+LogInDialog QCheckBox
+{
+color:#9C9C9C;
+}
+
+LogInDialog QLabel#logretLabel
+{
+color:red;
+}
+
+/*****tmp guest login*****/
+LogInDialog QPushButton#guestLoginBtn
+{
+background:transparent;
+border:none
+}
+
+
+LogInDialog QPushButton#guestLoginBtn:hover,QPushButton#guestLoginBtn:pressed
+{
+text-decoration:underline;
+}
+
+LogInDialog QPushButton#guestLoginBtn:pressed
+{
+
+background:rgba(245,245,245,100);
+}

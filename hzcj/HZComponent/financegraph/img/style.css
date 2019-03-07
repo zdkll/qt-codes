@@ -1,0 +1,40 @@
+﻿#HZFinanceMarster
+{
+    background:#191919;
+}
+
+#scrollArea, #scrollAreaWidgetContents
+{
+    border:2px solid transparent;
+    background:transparent;
+}
+
+#HZFinanceKeyIndicator
+{
+    border-top:2px solid #000;
+    background:#222222;
+}
+
+#HZFinanceProfitText
+{
+    font:normal 12px "SimSun";
+    background:#222222;
+}
+
+#HZFinanceTitle, #HZProfitTitle
+{
+    height:26px;
+    font: normal 12px "SimSun";
+    border-top:2px solid #121212;
+    border-bottom:2px solid #000;
+    color:white;
+    background:#2f2f2f;
+}
+
+#HZIncomeOverview, #HZProfitOverView, #HZFinanceProfileOverview
+{
+    font: normal 12px "SimSun";
+    color:#cad4dc;
+    background:transparent;
+}
+

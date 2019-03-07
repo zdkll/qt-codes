@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/style.css</file>
+        <file>img/close.png</file>
+        <file>img/close_hover.png</file>
+        <file>img/sdBotton3.png</file>
+        <file>img/sdBotton4.png</file>
+        <file>img/sdSubpage.png</file>
+        <file>img/sdTop1.png</file>
+        <file>img/sdTop2.png</file>
+    </qresource>
+</RCC>

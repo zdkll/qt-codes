@@ -1,0 +1,158 @@
+﻿
+#weeklys
+{
+    background:#191919;
+}
+
+/*本周资金异动*/
+#CapitalChange
+{
+    font:14px "SimSun";
+    color:#ffffff;
+    /*background:#222222;
+    border:1px solid #3b3b3b;*/
+    background:#191919;
+    border:1px solid #3b3b3b;
+}
+
+#CapitalChange QTableView
+{
+    margin:5px 0px 0px 15px;
+    color:#cad4dc;
+    border:1px solid #191919;
+    background:#191919;
+}
+
+#CapitalChange #VLine
+{
+    background:#3b3b3b;
+    border:1px solid transparent;
+}
+
+#CapitalChange QTableView::item
+{
+    color:#cad4dc;
+    background:#191919;
+}
+
+#CurUpDowns QTableView, #StealingSummary QTableView
+{
+    color:#cad4dc;
+    border:1px solid transparent;
+    background:#222222;
+    gridline-color: #2f2f2f;
+    selection-background-color:#3a3a3a;
+}
+
+#CurUpDowns QTableView::item, #StealingSummary QTableView::item
+{
+    color:#cad4dc;
+    gridline-color:#222222;
+    background:#222222;
+}
+
+#CurUpDowns QTableView::item:selected, #StealingSummary QTableView::item:selected
+{
+    color:#cad4dc;
+    border:1px solid #222222;
+    background:#2f2f2f;
+    gridline-color: #222222;
+}
+
+/*本周周报*/
+#CurWeeklys
+{
+    border:1px solid #3d3d3d;
+    background:#191919;
+}
+
+#MidTitleChangeFrame
+{
+    background:black;
+}
+
+#in_out_label
+{
+    font:14px "SimSun";
+    color:#adadad;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    background:#2f2f2f;
+}
+
+/*本周涨跌*/
+#CurUpDowns
+{
+    border:1px solid #3d3d3d;
+    background:#222222;
+}
+
+/*盯盘总结*/
+#StealingSummary
+{
+    border:1px solid #3d3d3d;
+    background:#222222;
+}
+
+/*表头样式*/
+
+/*
+#StealingSummary QHeaderView, #CurUpDowns QHeaderView
+{
+    background-color: #222222;
+}
+*/
+
+#StealingSummary QHeaderView::section, #CurUpDowns QHeaderView::section
+{
+    font:12px "SimSun";
+    height:23px;
+    background-color: #2f2f2f;
+    color: #cacaca;
+
+    /*padding-left: 4px;*/
+    border:1px solid transparent;
+    border-right: 1px solid #222222;
+}
+
+/*所有子窗口的标题栏*/
+#CurUpDownsTitleBar, #StealingSummaryTitleBar,#CapitalChangeTitleBar
+{
+    font:14px "SimSun";
+    color:#ffffff;
+    background:#222222;
+}
+
+/*资金异动标题栏目 start*/
+#CapitalChangeTitleBar,#in_out_label
+{
+    border:1px solid transparent;
+}
+
+#MidTitleChangeFrame
+{
+    border:1px solid #2f2f2f;
+    background:#000000;
+    border-top:1px solid #000000;
+    border-bottom:1px solid #000000;
+}
+
+#in_out_label
+{
+    font:14px "SimSun";
+    color:#adadad;
+    border:1px solid #2f2f2f;
+    background:#2f2f2f;
+}
+/*资金异动标题栏目 end*/
+
+/*table header view arrow style*/
+#StealingSummary QHeaderView::down-arrow, #CurUpDowns QHeaderView::down-arrow
+{
+    image: url(:/skin/default/img/weekly/down.png);
+}
+
+#StealingSummary QHeaderView::up-arrow, #CurUpDowns QHeaderView::up-arrow
+{
+    image: url(:/skin/default/img/weekly/up.png);
+}

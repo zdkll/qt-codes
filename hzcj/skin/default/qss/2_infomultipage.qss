@@ -1,0 +1,281 @@
+﻿#InfoMaster
+{
+    background:#222222;
+}
+
+#CalandarBarMaster
+{
+    border-top: 1px solid #010101;
+    border-bottom: 1px solid #010101;
+    background:transparent;
+}
+
+#InfoMaster QPushButton
+{
+    background-color:transparent;
+    font-size:12px;
+    font-family:"SimSun";
+    color:#adadad;
+    border-radius: 2px;
+    width:70px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+#InfoMaster QPushButton:checked
+{
+    background-color:#414141;
+    color:#ffffff;
+}
+
+/*导航TAB*/
+InfoMaster CSubTab#topTab QPushButton{
+background-color:transparent;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+border-radius: 2px;
+width:70px;
+padding-top:4px;
+padding-bottom:4px;
+}
+
+InfoMaster CSubTab#topTab QPushButton:checked
+{
+background-color:#414141;
+color:#ffffff;
+}
+
+
+#HotInfoMarster
+{
+    background:transparent;
+}
+
+#CalanderMenu
+{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    border-left-width:1px;
+    border:1px solid #3c3c3c;
+    background:#222222;
+}
+
+/* child title bar , #CustomCldBtn*/
+#TitleBarFrame
+{
+    background:#222222;
+}
+
+#LeftButtonIcon
+{
+    background:transparent;
+    border-image:url(:/skin/default/img/infopage/calendar.png);
+}
+
+/*
+#CustomCldBtn:hover, #CustomCldBtn:clicked
+{
+    color:#ffffff;
+    background:#2f2f2f;
+    font-family:"Arial";
+    font-size:12px;
+    radius:2px;
+}
+*/
+
+#TitleTextLabel
+{
+    font-family:"SimSun";
+    font-size:14px;
+    color:#cad4dc;
+    background:transparent;
+}
+
+InfoMaster #IndexReqButton
+{
+    background:#222222;
+    border:1px solid black;
+}
+
+InfoMaster QListView
+{
+    outline:0px;
+    border:1px solid transparent;
+    border-right:1px solid black;
+    background:transparent;
+}
+
+/*Economic*/
+#EconomicView, #MarketAreamScrollArea, #MarketAreaContent
+{
+    border:1px solid transparent;
+    background:#191919;
+}
+
+#EconomicMaster
+{
+    background:#222222;
+}
+
+/* 7*24 button style */
+#MultiHourMarster
+{
+    background:#191919;
+}
+
+#CtrlFrame, #MultiHourMarster QListView
+{
+    background:transparent;
+}
+
+#CtrlFrame #AutoRefresh
+{
+    background:transparent;
+    border-image:url(:/skin/default/img/infopage/auto_refresh.png);
+}
+
+#CtrlFrame #AutoRefresh:checked
+{
+    background:transparent;
+    border-image:url(:/skin/default/img/infopage/auto_refresh_hover.png);
+}
+
+#CtrlFrame #ManualRefresh
+{
+    background:transparent;
+    border-image:url(:/skin/default/img/infopage/refresh.png);
+}
+
+#CtrlFrame #ManualRefresh:checked
+{
+    background:transparent;
+    border-image:url(:/skin/default/img/infopage/refresh_hover.png);
+}
+
+InfoMaster QListView::item
+{
+    height:42px;
+    background-color:#222222;
+    border-bottom:1px solid #2c2c2c;
+}
+
+InfoMaster QListView::item:selected
+{
+     background-color:#191919;
+}
+
+InfoMaster QListView::item:hover
+{
+
+    background-color:#191919;
+}
+
+
+NewsMarster QListView::item
+{
+    height:42px;
+    background-color:#222222;
+    border-bottom:1px solid #2c2c2c;
+}
+
+NewsMarster QListView::item:selected
+{
+     background-color:#191919;
+}
+
+NewsMarster QListView::item:hover
+{
+
+    background-color:#191919;
+}
+
+
+/* scroll style */
+InfoMaster QScrollBar:vertical
+{
+    width:15px;
+    background:rgb(14,14,14);
+    margin:0px,0px,0px,0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+InfoMaster QScrollBar::handle:vertical
+{
+    background-color:#2e2e2e;
+    border-radius:3px;
+    margin-left: 3px;
+    min-height: 20px;
+    margin-right:3px;
+}
+
+InfoMaster QScrollBar::add-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: bottom;
+    subcontrol-origin:margin;
+}
+
+InfoMaster QScrollBar::sub-line:vertical
+{
+    height: 14px;
+    background-color:#0e0e0e;
+    subcontrol-position: top;
+    subcontrol-origin:margin;
+}
+
+InfoMaster QScrollBar::up-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_up.png);
+}
+
+InfoMaster QScrollBar::down-arrow
+{
+    image:url(:/skin/default/img/tableview/scrollbar_down.png);
+}
+
+InfoMaster QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+{
+    background:rgb(0,0,0,10%);
+    border-radius:4px;
+}
+
+/*global canlandar*/
+CustomCldBtn#CustomCldBtn
+{
+    background-color:transparent;
+}
+
+CustomCldBtn#CustomCldBtn:hover
+{
+    border:2px solid transparent;
+    background-color:#2f2f2f;
+}
+
+/*global zixun*/
+#HZInfoNewsView::item
+{
+    height:42px;
+    background-color:#222222;
+    border-bottom:1px solid #2c2c2c;
+}
+
+#HZInfoNewsView::item:selected
+{
+     background-color:#253a54;
+}
+
+#HZInfoNewsView::item:hover
+{
+    background-color:#1c4676;
+}
+
+#CalandarBarFrame
+{
+    background:#222222;
+}

@@ -1,0 +1,869 @@
+﻿/********************************************************************
+created: 2018/9
+author: juntang.xie
+purpose: 盘口样式配置文件
+*********************************************************************/
+HandicapStyledWidget
+{
+qproperty-riseColor:#f75245;
+qproperty-downColor:#0fc351;
+qproperty-textColor:#ffffff;
+qproperty-textFamily:"ArialMT";
+qproperty-textPixelSize:13;
+qproperty-textBold:true;
+qproperty-risePriceColor:#e62424;
+qproperty-downPriceColor:#0fc351;
+qproperty-volumeColor:#cad4dc;
+}
+
+BuySellFiveView
+{
+background:transparent;
+border:none;
+}
+
+BuySellFiveView#buyfiveview::item{
+border-bottom: 1px solid #452e2a;
+background:#2e2622;
+}
+
+
+BuySellFiveView#sellfiveview::item{
+border-bottom: 1px solid #033327;
+background:#01240d;
+}
+
+HandicapTitleWidget
+{
+background:#191919;
+}
+
+
+HandicapTitleWidget QLabel#name
+{
+color:#cad4dc;
+font:bold 16px "SimSun";
+border:none;
+}
+
+HandicapTitleWidget QLabel#code
+{
+color:#cad4dc;
+font: bold 20px "Arial";
+border:none;
+}
+
+HandicapTitleWidget QLabel#price
+{
+/*color:#e62727;*/
+font: bold 28px "Arial";
+border:none;
+}
+
+HandicapTitleWidget QLabel#rate
+{
+font: bold 13px "Arial";
+border:none;
+}
+
+HandicapTitleWidget QLabel#arrow
+{
+max-width:11px;
+min-width:11px;
+max-height:15px;
+min-height:15px;
+}
+
+HandicapTitleWidget QLabel#arrow[state="fall"]{
+border-image:url(:/skin/default/img/minimornitor/RIGHT-fall.png);
+}
+
+HandicapTitleWidget QLabel#arrow[state="rise"]{
+border-image:url(:/skin/default/img/minimornitor/RIGHT-rise.png);
+}
+
+
+HandicapTitleWidget QLabel#arrow[state="unknown"]{
+image:url("");
+}
+
+HandicapTitleWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+HandicapTitleWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+HandicapTitleWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+HandicapTitleWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+
+
+HandicapTitleWidget QPushButton#add
+{
+max-width:20px;
+min-width:20px;
+max-height:20px;
+min-height:20px;
+}
+
+HandicapTitleWidget QPushButton#add[selfstock=true]
+{
+    border-image:url(:/skin/default/img/handicap/delete.png);
+}
+
+HandicapTitleWidget QPushButton#add[selfstock=true]:hover
+{
+    border-image:url(:/skin/default/img/handicap/delete_hover.png);
+}
+
+
+HandicapTitleWidget QPushButton#add[selfstock=false]
+{
+    border-image:url(:/skin/default/img/handicap/add.png);
+}
+
+HandicapTitleWidget QPushButton#add[selfstock=false]:hover
+{
+    border-image:url(:/skin/default/img/handicap/add_hover.png);
+}
+
+
+HandicapTitleWidget QPushButton#warn
+{
+width:20px;
+height:20px;
+border-image:url(:/skin/default/img/handicap/remind.png);
+}
+
+HandicapTitleWidget QPushButton#warn:hover
+{
+border-image:url(:/skin/default/img/handicap/remind_hover.png);
+}
+
+HandicapTitleWidget QPushButton#set
+{
+width:20px;
+height:20px;
+border-image:url(:/skin/default/img/handicap/install.png);
+}
+
+HandicapTitleWidget QPushButton#set:hover
+{
+border-image:url(:/skin/default/img/handicap/install_hover.png);
+}
+
+/**************************相似K线盘口开始*************************************/
+
+SimilarKlineHandicapTitleWidget
+{
+background:#191919;
+}
+
+HandicapCentralWidget#similar
+{
+border-bottom:1px solid #000000;
+}
+
+SimilarKlineHandicapTitleWidget QLabel#name
+{
+color:#cad4dc;
+font:bold 16px "SimSun";
+border:none;
+}
+
+SimilarKlineHandicapTitleWidget QLabel#code
+{
+color:#cad4dc;
+font: bold 20px "Arial";
+border:none;
+}
+
+SimilarKlineHandicapTitleWidget QLabel#price
+{
+/*color:#e62727;*/
+font: bold 28px "Arial";
+border:none;
+}
+
+SimilarKlineHandicapTitleWidget QLabel#rate
+{
+font: bold 13px "Arial";
+border:none;
+}
+
+SimilarKlineHandicapTitleWidget QLabel#arrow
+{
+max-width:11px;
+min-width:11px;
+max-height:15px;
+min-height:15px;
+}
+
+SimilarKlineHandicapTitleWidget QLabel#arrow[state="fall"]{
+border-image:url(:/skin/default/img/minimornitor/RIGHT-fall.png);
+}
+
+SimilarKlineHandicapTitleWidget QLabel#arrow[state="rise"]{
+border-image:url(:/skin/default/img/minimornitor/RIGHT-rise.png);
+}
+
+
+SimilarKlineHandicapTitleWidget QLabel#arrow[state="unknown"]{
+image:url("");
+}
+
+SimilarKlineHandicapTitleWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+SimilarKlineHandicapTitleWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+SimilarKlineHandicapTitleWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+SimilarKlineHandicapTitleWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+
+
+SimilarKlineHandicapTitleWidget QPushButton#add
+{
+max-width:20px;
+min-width:20px;
+max-height:20px;
+min-height:20px;
+}
+
+SimilarKlineHandicapTitleWidget QPushButton#add[selfstock=true]
+{
+    border-image:url(:/skin/default/img/handicap/delete.png);
+}
+
+SimilarKlineHandicapTitleWidget QPushButton#add[selfstock=true]:hover
+{
+    border-image:url(:/skin/default/img/handicap/delete_hover.png);
+}
+
+
+SimilarKlineHandicapTitleWidget QPushButton#add[selfstock=false]
+{
+    border-image:url(:/skin/default/img/handicap/add.png);
+}
+
+SimilarKlineHandicapTitleWidget QPushButton#add[selfstock=false]:hover
+{
+    border-image:url(:/skin/default/img/handicap/add_hover.png);
+}
+
+
+SimilarKlineHandicapTitleWidget QPushButton#warn
+{
+width:20px;
+height:20px;
+border-image:url(:/skin/default/img/handicap/remind.png);
+}
+
+SimilarKlineHandicapTitleWidget QPushButton#warn:hover
+{
+border-image:url(:/skin/default/img/handicap/remind_hover.png);
+}
+
+SimilarKlineHandicapTitleWidget QPushButton#set
+{
+width:20px;
+height:20px;
+border-image:url(:/skin/default/img/handicap/install.png);
+}
+
+SimilarKlineHandicapTitleWidget QPushButton#set:hover
+{
+border-image:url(:/skin/default/img/handicap/install_hover.png);
+}
+
+SimilarKlineHandicapTitleWidget#similar QLabel#indi
+{
+qproperty-maximumSize:80px 22px;
+qproperty-minimumSize:80px 22px;
+border-image:url(:/skin/default/img/handicap/xiangsiNG.png);
+}
+
+SimilarKlineHandicapTitleWidget#select QLabel#indi
+{
+qproperty-maximumSize:80px 22px;
+qproperty-minimumSize:80px 22px;
+border-image:url(:/skin/default/img/handicap/ruxuanNG.png);
+}
+
+
+SimilarKlineHandicapWidget  CSubTab#subtab QPushButton{
+background-color:#222222;
+font-size:12px;
+font-family:"SimSun";
+color:#adadad;
+height:26px;
+border-radius: 1px;
+}
+
+SimilarKlineHandicapWidget  CSubTab#subtab QPushButton:checked
+{
+background-color:#3c3c3c;
+color:#ffffff;
+}
+
+
+
+HandicapNewsView
+{
+background:#222222;
+border:none;
+border-top:1px solid #000000;
+}
+
+HandicapNewsView::item
+{
+border-bottom: 1px solid #2f2f2f;
+}
+
+/**************************相似K线盘口end*************************************/
+
+
+HandicapCentralWidget
+{
+background:#191919;
+border-top:1px solid #222222;
+border-bottom:1px solid #222222;
+}
+
+HandicapCentralWidget QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+HandicapCentralWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+HandicapCentralWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+HandicapCentralWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+HandicapCentralWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+HandicapCentralWidget QLabel#numstyle{
+font: bold 13px "Arial";
+}
+
+HandicapBottomWidget
+{
+background:#191919;
+}
+
+HandicapBottomWidget QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+HandicapBottomWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+HandicapBottomWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+HandicapBottomWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+HandicapBottomWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+
+HandicapBottomWidget QLabel#numstyle{
+font: bold 13px "Arial";
+}
+
+/***************************指数盘口样式***************************/
+IndexHandicapWidget QWidget#mintitle,QWidget#klinetitle,
+QWidget#fbtitle
+{
+background:#2f2f2f;
+}
+
+IndexHandicapWidget QWidget#mintitle QLabel, QWidget#klinetitle QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+IndexHandicapWidget QWidget#fbtitle QLabel
+{
+    font: 12px "SimSun";
+    color:#ffffff;
+    padding-left:15;
+}
+
+IndexHandicapWidget QLabel#tickPrice
+{
+    padding-left:7;
+}
+
+IndexHandicapWidget QPushButton#clickTick
+{
+width:18px;
+height:18px;
+border-image:url(:/skin/default/img/handicap/detailed.png);
+}
+
+IndexHandicapWidget QPushButton#clickTick:hover
+{
+border-image:url(:/skin/default/img/handicap/detailed_hover.png);
+}
+
+IndexQuoteWidget
+{
+border-top:1px solid #222222;
+border-bottom:1px solid #222222;
+}
+
+IndexQuoteWidget QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+IndexQuoteWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+IndexQuoteWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+IndexQuoteWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+IndexQuoteWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+IndexQuoteWidget QLabel#numstyle{
+font: bold 13px "Arial";
+}
+
+IndexRiseFallWidget
+{
+background:#191919;
+}
+
+IndexRiseFallWidget QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+IndexRiseFallWidget QLabel#rise{
+color:#e62727;
+font: bold 13px "Arial";
+}
+
+IndexRiseFallWidget QLabel#fall{
+color:#0aaa38;
+font: bold 13px "Arial";
+}
+
+IndexRiseFallWidget QLabel#flat{
+color:#cad4dc;
+font: bold 13px "Arial";
+}
+
+
+/***************************end***************************/
+
+
+/***************************指数详情盘口样式***************************/
+IndexDetailQuoteWidget
+{
+background:#191919;
+border-top:1px solid #222222;
+border-bottom:1px solid #222222;
+}
+
+IndexDetailQuoteWidget QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+IndexDetailQuoteWidget QLabel#numstyle{
+font: bold 13px "Arial";
+}
+
+IndexDetailQuoteWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+IndexDetailQuoteWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+IndexDetailQuoteWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+IndexDetailQuoteWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+IndexDetailHandicapWidget QWidget#fundtitle
+{
+    background:#2f2f2f;
+}
+
+IndexDetailHandicapWidget QWidget#fundtitle QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+/***************************end**************************************/
+
+/***************************非重要指数盘口样式***************************/
+
+NormalIndexHandicapWidget QWidget#title
+{
+    background:#2f2f2f;
+}
+
+NormalIndexHandicapWidget QWidget#title QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+NormalIndexHandicapWidget QWidget#title QPushButton#clickTick
+{
+width:18px;
+height:18px;
+border-image:url(:/skin/default/img/handicap/detailed.png);
+}
+
+NormalIndexHandicapWidget QWidget#title QPushButton#clickTick:hover
+{
+border-image:url(:/skin/default/img/handicap/detailed_hover.png);
+}
+
+NormalIndexHandicapWidget QWidget#title QPushButton#clickTick::pressed{
+border-image:url(:/skin/default/img/handicap/detailed_hover.png);
+}
+
+/***************************end**************************************/
+
+
+/***************************集合竞价盘口样式***************************/
+
+CallMarketHandicapWidget QWidget#mainwidget
+{
+background:transparent;
+}
+
+CallMarketHandicapWidget QWidget#bidding
+{
+background:#2F2F2F;
+}
+
+CallMarketHandicapWidget QWidget#bidding QLabel
+{
+color:#cad4dc;
+}
+
+/***************************集合竞价盘口样式end**************************************/
+
+/***************************板块盘口样式***************************/
+
+PlateHandicapWidget QWidget#mainwidget
+{
+background:transparent;
+}
+
+
+PlateHandicapWidget QWidget#title
+{
+background:#2f2f2f;
+}
+
+PlateHandicapWidget QWidget#title QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+/***************************end**************************************/
+
+
+/***************************板块详情盘口样式***************************/
+
+PlateDetailHandicapWidget QWidget#fundtitle
+{
+    background:#2f2f2f;
+}
+
+PlateDetailHandicapWidget QWidget#fundtitle QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+PlateDetailQuoteWidget
+{
+background:#191919;
+border-top:1px solid #222222;
+border-bottom:1px solid #222222;
+}
+
+PlateDetailQuoteWidget QLabel
+{
+color:#cad4dc;
+font:12px "SimSun";
+}
+
+PlateDetailQuoteWidget QLabel#numstyle{
+font: bold 13px "Arial";
+}
+
+PlateDetailQuoteWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+PlateDetailQuoteWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+PlateDetailQuoteWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+PlateDetailQuoteWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+/***************************end**************************************/
+
+
+/***************************龙虎榜盘口组件***************************/
+LhTitieWidget
+{
+background:#191919;
+}
+
+LhTitieWidget QLabel#name
+{
+color:#cad4dc;
+font:bold 14px "SimSun";
+border:none;
+}
+
+
+LhTitieWidget QLabel#code
+{
+color:#cad4dc;
+font: bold 18px "Arial";
+border:none;
+}
+
+LhTitieWidget QLabel#price
+{
+font: bold 18px "Arial";
+border:none;
+}
+
+LhTitieWidget QLabel#rate
+{
+font: bold 13px "Arial";
+border:none;
+}
+
+LhTitieWidget QLabel#arrow
+{
+max-width:11px;
+min-width:11px;
+max-height:15px;
+min-height:15px;
+}
+
+LhTitieWidget QLabel#arrow[state="0"]{
+border-image:url(:/skin/default/img/minimornitor/RIGHT-rise.png);
+}
+
+LhTitieWidget QLabel#arrow[state="1"]{
+border-image:url(:/skin/default/img/minimornitor/RIGHT-fall.png);
+}
+
+
+LhTitieWidget QLabel#arrow[state="2"]{
+image:url("");
+}
+
+LhTitieWidget QLabel#arrow[state="3"]{
+image:url("");
+}
+
+
+LhTitieWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+LhTitieWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+LhTitieWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+LhTitieWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+
+LhTitieWidget QPushButton#add
+{
+max-width:20px;
+min-width:20px;
+max-height:20px;
+min-height:20px;
+}
+
+LhTitieWidget QPushButton#add[selfstock=true]
+{
+    border-image:url(:/skin/default/img/handicap/delete.png);
+}
+
+LhTitieWidget QPushButton#add[selfstock=true]:hover
+{
+    border-image:url(:/skin/default/img/handicap/delete_hover.png);
+}
+
+
+LhTitieWidget QPushButton#add[selfstock=false]
+{
+    border-image:url(:/skin/default/img/handicap/add.png);
+}
+
+LhTitieWidget QPushButton#add[selfstock=false]:hover
+{
+    border-image:url(:/skin/default/img/handicap/add_hover.png);
+}
+
+LhRiseFallWidget
+{
+border-top:1px solid #222222;
+background:#191919;
+}
+
+LhRiseFallWidget QLabel
+{
+font:bold 14px "SimSun";
+color:#cad4dc;
+}
+
+LhRiseFallWidget QLabel#netbuy, QLabel#allbuy, QLabel#allsell
+{
+font:bold 20px "Arial";
+}
+
+
+LhRiseFallWidget QLabel[QuotePanelDirc="0"]{
+color:#e62727;
+}
+
+LhRiseFallWidget QLabel[QuotePanelDirc="1"]{
+color:#0aaa38;
+}
+
+LhRiseFallWidget QLabel[QuotePanelDirc="2"]{
+color:#cad4dc;
+}
+
+LhRiseFallWidget QLabel[QuotePanelDirc="3"]{
+color:#cad4dc;
+}
+
+
+QListButton
+{
+background:#2f2f2f;
+qproperty-textColor:#adadad;
+border:0px;
+border-radius:2px
+}
+
+QListButton:hover
+{
+background:#414141;
+}
+
+QListButton:checked
+{
+background:#414141;
+}
+
+QListButton::menu-indicator
+{
+image:none;
+}
+
+LhTitieWidget QListWidget
+{
+background: transparent;
+max-width:112px;
+min-width:112px;
+outline:0px;
+border:1px solid #3e3e3e;
+}
+
+LhTitieWidget QMenu QListWidget::item
+{
+background:transparent;
+color:#adadad;
+}
+
+LhTitieWidget QMenu QListWidget::item:hover
+{
+background-color:#1c4675;
+color:#ffffff;
+}
+
+LhTitieWidget QMenu
+{
+background:transparent;
+}
+
+LhListHandicapWidget QWidget#bottomwidget
+{
+background:#191919;
+}
+
+/***************************龙虎榜盘口组件end***************************/
+

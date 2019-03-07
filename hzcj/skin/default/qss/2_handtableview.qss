@@ -1,0 +1,53 @@
+﻿HandTableView
+{
+qproperty-riseColor:#e62727;
+qproperty-plainColor:#cad4dc;
+qproperty-fallColor:#0aaa38;
+qproperty-gridLineColor:#2e2e2e;
+
+qproperty-normalColor:#cad4dc;
+qproperty-bpColorFirst:#0fc351;
+}
+
+HandTableView
+{
+background-color:#222222;
+border:none;
+gridline-color:#2e2e2e;
+}
+
+HandTableView QHeaderView
+{
+background-color:#222222;
+border:none;
+height:22px;
+font-family:"SimSun";
+font-size:13;
+color:#cad4dc;
+margin-bottom:1px;
+border-bottom: 1px solid  #2e2e2e;
+}
+
+HandTableView QHeaderView::section
+{
+background-color:#222222;
+border:none;
+
+padding-top:6px;
+padding-bottom:3px;
+
+height:18px;
+
+padding-left:15px;
+padding-right:15px;
+
+font:normal 12px "SimSun";
+color: #cad4dc;
+}
+
+SLFundLeaderNetputView QHeaderView::section:middle
+{
+padding-left: 0px;
+padding-right:0px;
+}
+
