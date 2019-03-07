@@ -1,8 +1,6 @@
 ﻿#include "widget.h"
 #include <QApplication>
 
-#include "geos.h"
-
 #include <QPoint>
 #include <QVector2D>
 #include <QDebug>
