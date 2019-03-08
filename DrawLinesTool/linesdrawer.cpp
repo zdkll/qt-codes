@@ -17,7 +17,7 @@ using namespace DrawLine;
 
 LinesDrawer::LinesDrawer(QWidget *parent)
     :QObject(parent),m_curLine(0)
-    ,m_widget(parent)
+    ,m_widget(parent),m_screenShot(0)
 {
     //设置画线的静态属性
     AbstractLine::setGActivedColor(Qt::white);
@@ -28,6 +28,10 @@ LinesDrawer::~LinesDrawer()
 {
     qDeleteAll(m_lines);
     m_lines.clear();
+    if(m_screenShot){
+        delete m_screenShot;
+        m_screenShot = NULL;
+    }
 }
 
 void LinesDrawer::resize(const QSize& size)
@@ -265,9 +269,6 @@ AbstractLine *LinesDrawer::findActivedLine(const QPoint &pt)
 bool LinesDrawer::commandFilter(const DrawLine::Command& cmd)
 {
     switch (cmd.toolType) {
-    case eSelect:   //选择图元
-
-        break;
     case eDelAllLines: //删除所有Line
     {
         int button = QMessageBox::warning(NULL,QStringLiteral("删除所有线"),QStringLiteral("确定要删除所有画线吗？")
@@ -277,7 +278,11 @@ bool LinesDrawer::commandFilter(const DrawLine::Command& cmd)
     }
         return true;
     case eScreenShot://截图
-
+    {
+        if(!m_screenShot)
+            m_screenShot = new ScreenShot();
+        m_screenShot->startScreenShot();
+    }
         return true;
     default:
         break;

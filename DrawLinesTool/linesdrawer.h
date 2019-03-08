@@ -7,6 +7,7 @@
 #include "line.h"
 #include "drawlinepublic.h"
 #include "poscalculator.h"
+#include "screenshot.h"
 
 //线条绘制管理器：受DrawLinePanel 面板控制，绘制管理Line
 class QPaintEvent;
@@ -75,6 +76,9 @@ private:
 
     bool        m_isPressed;
     QPoint    m_pressPt;
+
+    //截图工具
+    ScreenShot  *m_screenShot;
 
     //坐标计算类
     PosCalculator m_pCaltor;

@@ -26,7 +26,10 @@ SOURCES += main.cpp\
     line.cpp \
     poscalculator.cpp \
     linealgorith.cpp \
-    linesettingdialogs.cpp
+    linesettingdialogs.cpp \
+    screen.cpp \
+    screenshot.cpp \
+    screenshottoolbar.cpp
 
 
 HEADERS  += widget.h \
@@ -41,7 +44,10 @@ HEADERS  += widget.h \
     Ioc.hpp \
     NonCopyable.hpp \
     linealgorith.h \
-    linesettingdialogs.h
+    linesettingdialogs.h \
+    screen.h \
+    screenshot.h \
+    screenshottoolbar.h
 
 
 FORMS    += widget.ui
